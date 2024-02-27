@@ -1,0 +1,33 @@
+.section-slider{
+    @apply
+    w-full bg-gray-200 relative
+}
+.slider-navigation{
+    @apply
+    w-full absolute bottom-0 flex justify-end
+}
+
+.slider-navigation .arrows{
+    @apply
+    flex items-center gap-4 lg:gap-12 text-white px-12 w-full lg:w-72 justify-center lg:justify-start
+    mb-4 lg:mb-0
+}
+
+.slider-navigation .arrows svg{
+    @apply
+    w-8 h-8 hover:scale-110 transition
+}
+
+.slider-navigation .index{
+    max-width: 1394px;
+
+    @apply
+    bg-white h-32 w-full relative overflow-hidden
+    hidden lg:block
+}
+
+.slider-navigation .index .active-slide{
+    width:33%;
+    @apply
+    h-1 absolute top-0 left-0 bg-secondary
+}

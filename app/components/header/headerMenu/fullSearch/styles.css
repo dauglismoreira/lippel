@@ -1,0 +1,27 @@
+.full-search-menu{
+    transform:translate(0,-100%);
+    height:calc(100% - 152px);
+    @apply
+    fixed w-full inset-0 bg-white z-40 transition p-12
+}
+
+.full-search-menu.active{
+    transform:translate(0,152px);
+}
+
+.full-search-menu .search-input-container{
+    max-width:1400px;
+
+    @apply
+    w-full mx-auto flex items-center border-b border-primary
+}
+
+.full-search-menu .search-input-container svg{
+    @apply
+    text-primary w-8 h-8 
+}
+
+.full-search-menu .search-input-container input{
+    @apply
+    w-full px-2 h-16 outline-none
+}

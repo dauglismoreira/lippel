@@ -1,0 +1,130 @@
+.toogle-menu{
+    transform:translate(0,-100%);
+    left:75%;
+    @apply
+    fixed bg-white lg:bg-ultraSoftBlue z-40 transition top-0 border-t border-primary
+    w-full lg:w-56 lg:h-auto
+}
+
+.toogle-menu ul{
+    @apply
+    p-4
+}
+
+@media(max-width:1400px){
+    .toogle-menu{
+        left:auto;
+        right:0;
+    }
+}
+
+.toogle-menu.active{
+    transform:translate(0,152px);
+}
+
+@media(max-width:1024px){
+    .toogle-menu.active{
+        transform:translate(0,56px);
+    }
+    .toogle-menu{
+        height:calc(100% - 56px);
+    }
+}
+
+.toogle-menu li{
+    @apply
+    text-primary uppercase list-none font-bold py-2 hover:text-secondary cursor-pointer
+}
+
+.mobile-content{
+    @apply
+    block lg:hidden
+}
+
+@media(max-width:1024px){
+    .toogle-menu{
+        @apply
+        flex justify-between flex-col
+    }
+    .toogle-menu .header-contact{
+        @apply
+        bg-primary px-2 py-6
+    }
+    .toogle-menu .header-contact p{
+        @apply
+        w-full justify-center
+    }
+    .toogle-menu .mobile-content .locale{
+        @apply
+        flex justify-center gap-4 items-center py-8
+    }
+    .toogle-menu .mobile-content .locale span{
+        @apply
+        w-0.5 h-4 bg-primary block
+    }
+
+    .toogle-menu li.option{
+        @apply
+        flex gap-4 items-center cursor-pointer hover:text-secondary w-full px-4 h-20
+        border-b border-regularSoftBlue text-lg relative
+    }
+
+    .toogle-menu li.option svg{
+        @apply
+        fill-primary 
+    }
+    
+    .toogle-menu li.option svg.arrow{
+        @apply
+        transition rotate-0
+    }
+
+    .toogle-menu li.option svg.arrow.active{
+        @apply
+        rotate-180
+    }
+
+    .toogle-menu li.option svg.arrow{
+        @apply
+        w-8 h-8 absolute right-4
+    }
+}
+
+
+
+
+
+.products-sub-category{
+    
+}
+
+.products-sub-category .sub-category-item{
+    @apply
+    flex gap-4 p-8 h-20 bg-softGray border-b border-regularSoftBlue items-center relative
+}
+
+.products-sub-category .sub-category-item svg.arrow{
+    @apply
+    w-8 h-8 absolute right-8 fill-primary transition
+}
+
+.products-sub-category .sub-category-item h2{
+    @apply
+    text-lg font-bold
+}
+
+.products-sub-category .sub-category-item:nth-child(1) h2{
+    color:#D3AC00;
+}
+.products-sub-category .sub-category-item:nth-child(2) h2{
+    color:#50A48A;
+}
+.products-sub-category .sub-category-item:nth-child(3) h2{
+    color:#4575F6;
+}
+.products-sub-category .sub-category-item:nth-child(4) h2{
+    color:#947658;
+}
+.products-sub-category .sub-category-item:nth-child(5) h2{
+    color:#263238;
+}

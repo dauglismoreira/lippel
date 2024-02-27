@@ -1,0 +1,77 @@
+
+.header .header-menu{
+    @apply
+    bg-ultraSoftBlue h-14 lg:h-24 relative z-50
+}
+
+.header .header-menu .menu{
+    @apply
+    list-none text-primary uppercase font-semibold gap-8
+    hidden lg:flex
+}
+
+.header .header-menu .menu li{
+    @apply
+    flex gap-2 items-center cursor-pointer hover:text-secondary
+}
+
+.header .header-menu .menu li.active{
+    @apply
+    text-secondary
+}
+
+.header .header-menu .menu li svg{
+    @apply
+    fill-primary
+}
+
+.header .header-menu .menu li:hover svg,
+.header .header-menu .menu li.active svg{
+    @apply
+    fill-secondary
+}
+
+.header .header-menu .actions{
+    @apply
+    flex gap-4 items-center
+}
+
+.header .header-menu .actions svg{
+    @apply
+    w-6 h-6 text-primary cursor-pointer transition hover:scale-150
+}
+
+.header .header-menu .actions .toogle{
+    @apply
+    w-6 h-6 flex flex-col justify-around cursor-pointer
+}
+
+.header .header-menu .actions .toogle span{
+    @apply
+    w-full h-0.5 bg-primary transition
+}
+
+.header .header-menu .header-col{
+    @apply
+    flex gap-20
+}
+
+.header .header-menu .actions .toogle.active span:nth-child(1){
+    transform:rotate(45deg);
+    margin-bottom:-25px;
+}
+
+.header .header-menu .actions .toogle.active span:nth-child(2){
+    @apply
+    opacity-0
+}
+
+.header .header-menu .actions .toogle.active span:nth-child(3){
+    transform:rotate(-45deg);
+    margin-top:-25px;
+}
+
+.header .header-menu .search-icon{
+    @apply
+    hidden lg:block
+}

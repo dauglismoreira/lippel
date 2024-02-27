@@ -1,0 +1,36 @@
+.header .header-locale{
+    @apply
+    h-14 w-full bg-primary relative z-50
+    hidden lg:block
+}
+
+.header .locale{
+    @apply
+    flex
+}
+
+.header-contact p{
+    @apply
+    text-sm text-white uppercase flex items-end gap-2
+}
+
+.header-contact p a{
+    margin-bottom:-2px;
+    @apply
+    font-semibold flex gap-2 items-center text-lg hover:text-secondary cursor-pointer
+}
+
+.header-container .locale{
+    @apply
+    flex gap-2 items-center
+}
+
+.header-container .locale li{
+    @apply
+    list-none text-white text-sm cursor-pointer hover:text-secondary
+}
+
+.header-container .locale .separate{
+    @apply
+    h-4 w-px bg-white block
+}

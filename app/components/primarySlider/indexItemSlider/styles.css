@@ -1,0 +1,26 @@
+.index-item{
+    @apply
+    h-full flex flex-col justify-center h-32 px-8 gap-4 cursor-pointer
+}
+
+.index-item-row{
+    @apply
+    flex gap-4
+}
+
+.index-item-index p{
+    @apply
+    text-2xl text-secondary font-bold
+}
+
+.index-item-category h5{
+    font-size:10px;
+
+    @apply
+    text-softBlue font-semibold uppercase pt-2
+}
+
+.index-item-row h3{
+    @apply
+    text-2xl text-primary font-bold text-ellipsis whitespace-nowrap overflow-hidden
+}

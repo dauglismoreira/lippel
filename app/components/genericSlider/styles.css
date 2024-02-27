@@ -1,0 +1,9 @@
+.wrapper{
+    @apply
+    relative w-full h-full flex
+}
+
+.slider-container{
+    @apply
+    overflow-hidden
+}

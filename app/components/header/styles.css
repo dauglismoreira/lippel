@@ -1,0 +1,26 @@
+.header{
+    @apply
+    fixed top-0 left-0 z-50 w-full
+}
+
+.header .header-container{
+    max-width:1400px;
+    
+    @apply
+    mx-auto flex justify-between items-center w-full h-full px-4
+}
+
+.margin-fix{
+    height:152px;
+}
+
+@media(max-width:1024px){
+    .margin-fix{
+        height:56px;
+    }
+}
+
+.overlay{
+    @apply
+    fixed h-full w-full top-0 left-0 opacity-80 bg-black z-20
+}

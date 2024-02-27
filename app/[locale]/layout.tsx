@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
+import "./../globals.css";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 import {I18nProviderClient} from '@/locales/client';
 import { ReactNode } from "react";
 

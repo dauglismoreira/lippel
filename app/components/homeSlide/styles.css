@@ -1,0 +1,31 @@
+.home-slide{
+    height:800px;
+
+    @apply
+    w-full bg-center bg-cover
+}
+
+@media(max-width:1024px){
+    .home-slide{
+        height:354px;
+    }
+    
+}
+
+.slide-content{
+    max-width:1400px;
+
+    @apply
+    mx-auto h-full flex flex-col justify-center gap-2 px-4
+}
+
+.slide-content h3{
+    @apply
+    bg-strongBlue p-2 text-white uppercase lg:font-bold w-max lg:-mt-20
+    text-xs lg:text-2xl
+}
+
+.slide-content h2{
+    @apply
+    bg-primary p-4 text-white font-bold lg:font-black text-lg lg:text-6xl w-max
+}

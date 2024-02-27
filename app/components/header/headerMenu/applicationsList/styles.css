@@ -1,0 +1,56 @@
+.overlay-menu-container{
+    transform:translate(0,-100%);
+    height:722px;
+    @apply
+    fixed w-full inset-0 bg-white z-30 transition p-12
+}
+
+.overlay-menu-container.active{
+    transform:translate(0,152px);
+}
+
+.overlay-menu-container h3{
+    @apply
+    text-lg text-primary uppercase font-bold
+}
+
+.overlay-menu-container h2{
+    @apply
+    text-lg font-bold
+}
+
+.overlay-menu-container .application-menu-container{
+    @apply
+    flex mt-12 gap-12
+}
+
+.overlay-menu-container .application-menu-container .application-menu-col{
+    @apply
+    flex justify-between flex-col
+}
+
+.overlay-menu-container .application-menu-container .application-menu-col.sub-item{
+    @apply
+    justify-start
+}
+
+.overlay-menu-container .application-menu-container .application-item{
+    @apply
+    flex gap-2 items-center font-bold w-60 justify-between h-12 text-primary cursor-pointer
+}
+
+.overlay-menu-container .application-menu-container .application-item:hover h4,
+.overlay-menu-container .application-menu-container .application-item.active h4{
+    @apply
+    text-secondary
+}
+
+.overlay-menu-container .application-menu-container .application-item:hover svg,
+.overlay-menu-container .application-menu-container .application-item.active svg{
+    margin-right:5px;
+}
+
+.overlay-menu-container .application-menu-container .application-sub-item{
+    @apply
+    flex gap-2 items-center font-bold w-60 justify-between h-12 text-primary hover:text-secondary cursor-pointer
+}
