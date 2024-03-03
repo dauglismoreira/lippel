@@ -1,0 +1,62 @@
+.card-container{
+    width:456px;
+    height:719px;
+    max-width:100%;
+
+    @apply
+    p-8 bg-white flex flex-col items-center gap-4 transition cursor-pointer
+    hover:border-secondary hover:border-2
+}
+
+.card-container .card-image{
+    height:237px;
+
+    @apply
+    w-full bg-center bg-cover
+}
+
+.card-container  .card-info{
+    @apply
+    w-full flex flex-col gap-2
+}
+
+.card-container  .card-info h3{
+    font-size:10px;
+    @apply
+    text-softBlue uppercase font-semibold
+}
+
+.card-container  .card-info h2{
+    @apply
+    text-2xl text-primary font-bold h-16
+}
+
+.card-container .skills-container{
+    @apply
+    flex flex-col my-4
+}
+
+.card-container .skills-container li{
+    @apply
+    flex list-none flex-wrap items-center border-b py-4
+}
+
+.card-container .skills-container li p{
+    @apply
+    flex-1 text-sm text-hardGray
+}
+
+.card-container .skills-container li span{
+    @apply
+    flex-1  text-sm text-hardGray font-bold
+}
+
+.card-container button{
+    @apply
+    bg-secondary text-darkBlue w-full  h-12 font-semibold uppercase mt-2
+}
+
+.card-container:hover button{
+    @apply
+    underline
+}

@@ -61,13 +61,13 @@ export const ToogleMenu = ({activeToogleMenu}: ToogleMenuProps) => {
             </div>
 
             <ul>
-                <li>A Lippel</li>
+                <li><a href="/about">A Lippel</a></li>
                 <li>Notícias</li>
-                <li>Vagas de emprego</li>
-                <li>Deixe seu currículo</li>
-                <li>Financiamento</li>
+                <li><a href="/jobs">Vagas de emprego</a></li>
+                <li><a href="/curriculum">Deixe seu currículo</a></li>
+                <li><a href="/financing">Financiamento</a></li>
                 <li>Entenda mais</li>
-                <li>Downloads</li>
+                <li><a href="/downloads">Downloads</a></li>
             </ul>
 
             <div className='mobile-content'>

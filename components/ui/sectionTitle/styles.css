@@ -1,0 +1,35 @@
+.title-container{
+    max-width:1400px;
+
+    @apply
+    flex justify-start lg:justify-between mx-auto pb-8 lg:pb-12 items-start lg:items-end
+    flex-col lg:flex-row
+}
+
+@media(max-width:1024px){
+    .title-container .menu{
+        max-width:100%;
+        @apply
+        pb-4
+    }
+}
+
+.title-container h2{
+    @apply
+    font-semibold text-3xl text-center lg:text-left mb-8 lg:mb-0
+}
+
+.menu{
+    @apply
+    flex gap-8 lg:gap-4 text-white overflow-auto lg:overflow-hidden
+}
+
+.menu .items{
+    @apply
+    text-base whitespace-nowrap font-semibold cursor-pointer border-b border-white
+}
+
+.menu .items.active{
+    @apply
+    text-secondary border-secondary
+}

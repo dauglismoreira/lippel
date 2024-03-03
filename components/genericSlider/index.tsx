@@ -154,4 +154,6 @@ export const GenericSlider = forwardRef(({
       </SliderContext.Provider>
     );
   });
+
+  GenericSlider.displayName = "GenericSlider";
   

@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 import { Slide } from '../genericSlider/slide';
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { IndexItemSlider } from './indexItemSlider';
-import { HomeSlide } from '../homeSlide';
+import { HomeSlide } from '../ui/homeSlide';
 
 export const PrimarySlider = () => {
 

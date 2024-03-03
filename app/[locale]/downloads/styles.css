@@ -1,0 +1,9 @@
+#Downloads{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Downloads .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}

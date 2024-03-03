@@ -1,0 +1,35 @@
+.job-list{
+    @apply
+    list-none
+}
+
+.job-list .list{
+    @apply
+    flex flex-wrap border-b border-normalGray gap-6
+}
+
+.job-list .list.header-list{
+    @apply
+    h-12
+}
+
+.job-list .list.body-list{
+    @apply
+    h-28 items-center
+}
+
+
+.job-list .list.header-list .list-item label{
+    @apply
+    text-xs text-primary uppercase font-semibold  
+}
+
+.job-list .list.body-list .list-item h3{
+    @apply
+    text-lg text-primary font-semibold  flex items-center gap-2
+}
+
+.job-list .list.body-list .list-item p{
+    @apply
+    text-sm text-hardGray
+}

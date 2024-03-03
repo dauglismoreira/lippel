@@ -1,5 +1,5 @@
 .toogle-menu{
-    transform:translate(0,-100%);
+    transform:translate(0,-200%);
     left:75%;
     @apply
     fixed bg-white lg:bg-ultraSoftBlue z-40 transition top-0 border-t border-primary

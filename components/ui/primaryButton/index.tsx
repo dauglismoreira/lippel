@@ -1,12 +1,28 @@
+import { ReactNode } from 'react';
+import Link from 'next/link';
 import './styles.css';
 
 interface PrimaryButtonProps {
-    label:string;
-    link:string;
+    link?:string;
+    children:ReactNode;
+    action?:() => void;
+    className?:string;
+    disabled?:boolean;
 }
 
-export const PrimaryButton = ({label, link}: PrimaryButtonProps) => {
+export const PrimaryButton = ({link, action, children, className, disabled}: PrimaryButtonProps) => {
     return(
-        <button className="primary-button">{label}</button>
+        link ?
+        <Link href={link}>
+            <button className={`primary-button  ${className ? className : 'default'}`}>{children}</button>
+        </Link>
+        :
+        <button
+            onClick={action}
+            disabled={disabled ? disabled : false}
+            className={`primary-button ${className ? className : 'default'}`}
+        >
+            {children}
+        </button>
     )
 }

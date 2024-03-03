@@ -1,0 +1,14 @@
+#Services{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Services .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Services .page-content p{
+    @apply
+    text-lg text-hardGray  max-w-[930px]
+}

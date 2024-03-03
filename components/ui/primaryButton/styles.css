@@ -1,5 +1,15 @@
 .primary-button{
     @apply
-    bg-secondary text-darkBlue w-full  h-12 font-semibold uppercase mt-2 w-auto px-4
+    w-full  h-12 font-semibold uppercase mt-2 w-auto px-4
+}
+
+.primary-button.default{
+    @apply
+    bg-secondary text-darkBlue
     hover:text-secondary hover:bg-darkBlue
+}
+
+.primary-button.default[disabled]{
+    @apply
+    bg-gray-400 text-gray-300
 }

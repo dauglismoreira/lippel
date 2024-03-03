@@ -1,6 +1,6 @@
-import { BackgroundSection } from "@/components/backgroundSection";
-import { HighBlog } from "@/components/highBlog";
-import { HighProducts } from "@/components/highProducts";
+import { BackgroundSection } from "@/components/ui/backgroundSection";
+import { HighBlog } from "@/components/ui/highBlog";
+import { HighProducts } from "@/components/ui/highProducts";
 import { PrimarySlider } from "@/components/primarySlider";
 
 export default function Home() {

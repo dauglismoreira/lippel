@@ -1,0 +1,147 @@
+#About{
+    @apply
+    w-full bg-primary
+}
+
+#About .bread-content{
+    @apply
+    px-0 pt-6 pb-0 lg:pt-16 lg:pb-8
+}
+
+#About .bread-content a{
+    @apply
+    text-white hover:text-secondary
+}
+
+#About .bread-content svg{
+    @apply
+    fill-white
+}
+
+#About .page-content{
+    @apply
+    w-full
+}
+
+#About .page-content .section{
+    @apply
+    max-w-[930px] mx-auto px-4 pb-8
+}
+
+#About .page-content .section h1{
+    @apply
+    text-2xl lg:text-7xl text-white font-bold mb-4 lg:mb-20
+}
+
+#About .page-content .section .row{
+    @apply
+    flex flex-col lg:flex-row
+}
+
+#About .page-content .section .row .side-bar{
+    flex:1;
+
+    @apply
+    mb-4 lg:mb-0
+}
+
+#About .page-content .section .row .side-bar h3{
+    @apply
+    font-bold text-lg lg:text-2xl text-white
+}
+
+#About .page-content .section .row .body{
+    flex:4;
+}
+
+#About .page-content .section .row .body p{
+    @apply
+    text-white text-lg mb-8
+}
+
+#About .page-content.banner-section{
+    @apply
+    bg-center bg-cover
+}
+
+#About .page-content.banner-section .section{
+    @apply
+    w-full h-[282px] lg:h-[526px] flex items-center
+}
+
+#About .page-content.banner-section .section .row{
+    @apply
+    flex w-full
+}
+
+#About .page-content.banner-section .section .row .body h2{
+    @apply
+    text-2xl lg:text-5xl text-white font-bold lg:leading-snug mb-4 lg:mb-8 lg:-mt-3
+}
+
+#About .page-content.banner-section .section .row a,
+#About .page-content.banner-section .section .row button{
+    @apply
+    w-full lg:w-auto
+}
+
+#About .page-content.values-section{
+    @apply
+    bg-softGray pt-8 pb-4 lg:py-20 flex
+}
+
+#About .page-content.values-section .section{
+    @apply
+    flex flex-col gap-8
+}
+
+#About .page-content.values-section .section .row .body p{
+    @apply
+    text-hardGray text-lg mb-8
+}
+
+#About .page-content.values-section .section .row .body ul{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    @apply
+    text-hardGray text-lg grid gap-1
+}
+
+#About .page-content.values-section .section .row .body ul li{
+    @apply
+    flex items-center gap-2
+}
+
+#About .page-content.values-section .section .row .body ul li span{
+    @apply
+    text-secondary font-bold
+}
+
+#About .page-content.values-section .section .side-bar .index{
+    @apply
+    flex items-center gap-4 text-2xl font-semibold text-primary
+}
+
+.responsive-banner-images{
+    @apply
+    w-full flex h-[442px] overflow-hidden
+}
+
+.responsive-banner-images div{
+    @apply
+    h-full bg-center bg-cover w-full
+}
+
+@media(max-width:1024px){
+    .responsive-banner-images div:nth-child(3){
+        @apply
+        hidden
+    }
+}
+
+@media(max-width:620px){
+    .responsive-banner-images div:nth-child(2){
+        @apply
+        hidden
+    }
+}

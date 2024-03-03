@@ -1,0 +1,41 @@
+.bread-cointainer{
+    @apply
+    w-full
+}
+
+.bread-cointainer .bread-content{
+    @apply
+    max-w-[1400px] mx-auto py-8 flex gap-2 px-4
+}
+
+.bread-cointainer .bread-content a{
+    @apply
+    text-xs text-regularGray flex gap-2 hover:text-secondary items-center
+    hidden lg:block
+}
+
+.bread-cointainer .bread-content a:last-child{
+    @apply
+    hover:text-regularGray cursor-default
+}
+
+.bread-cointainer .bread-content a::after{
+    content:'/';
+
+    @apply
+    hidden lg:block
+}
+
+.bread-cointainer .bread-content a:last-child::after{
+    content:'';
+}
+
+.bread-cointainer .bread-content svg{
+    @apply
+    block lg:hidden h-6 w-6 fill-primary
+}
+
+.bread-cointainer .bread-content a:nth-child(2){
+    @apply
+    flex
+}

@@ -1,0 +1,91 @@
+.contact-form-container{
+    @apply
+    my-8
+}
+
+.contact-form-container fieldset{
+    @apply
+    flex flex-col gap-1
+}
+
+.contact-form-container fieldset label{
+    @apply
+    text-lg font-semibold text-hardGray
+}
+
+.contact-form-container fieldset input{
+    @apply
+    w-full border bg-softGray border-normalGray h-14 outline-none px-2
+}
+
+.contact-form-container fieldset textarea{
+    @apply
+    w-full border bg-softGray border-normalGray outline-none p-2
+}
+
+.input-grid-container{
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+
+    @apply
+    grid gap-4 my-4
+}
+
+.contact-form-container h2{
+    @apply
+    text-3xl text-primary font-semibold mb-2
+}
+
+.contact-form-container h3{
+    @apply
+    text-lg text-primary font-semibold
+}
+
+.contact-form-container p{
+    @apply
+    text-lg text-hardGray mb-8
+}
+
+.contact-form-container .acceptToogle{
+    @apply
+    flex gap-2 max-w-[930px] items-start my-3
+}
+
+.contact-form-container .acceptToogle input{
+    @apply
+    mt-1 h-4 w-4
+}
+
+.contact-form-container .acceptToogle label{
+    @apply
+    text-sm text-hardGray  max-w-[900px]
+}
+
+.contact-form-container .container-buttons{
+    @apply
+    flex gap-4 mb-8 flex-col lg:flex-row
+}
+
+.contact-form-container .container-buttons button{
+    @apply
+    flex items-center gap-2 justify-center
+}
+
+.contact-form-container .container-buttons button.active{
+    @apply
+    text-secondary bg-darkBlue
+}
+
+.select-container{
+    @apply
+    border border-secondary w-full h-14 pr-2
+}
+
+.select-container select{
+    @apply
+    w-full h-14 bg-transparent outline-none text-white font-semibold pb-2 pl-2
+}
+
+.select-container select option{
+    @apply
+    text-hardGray
+}

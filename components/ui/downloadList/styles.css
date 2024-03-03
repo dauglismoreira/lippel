@@ -1,0 +1,55 @@
+.download-list{
+    @apply
+    list-none
+}
+
+.download-list .list{
+    @apply
+    flex flex-wrap border-b border-normalGray gap-6
+}
+
+.download-list .list.header-list{
+    @apply
+    h-12
+}
+
+.download-list .list.body-list{
+    @apply
+    h-28 items-center
+}
+
+
+.download-list .list.header-list .list-item label{
+    @apply
+    text-xs text-primary font-semibold  
+}
+
+.download-list .list.body-list .list-item h5{
+    @apply
+    text-lg text-primary font-semibold  flex items-center gap-2
+}
+
+.download-list .list.body-list .list-item p{
+    @apply
+    text-lg text-hardGray
+}
+
+.download-list .list.body-list .list-item img{
+    @apply
+    w-12
+}
+
+.download-pagination{
+    @apply
+    w-full flex gap-4 items-center justify-center mt-8 mb-4
+}
+
+.download-pagination span{
+    @apply
+    text-primary font-semibold
+}
+
+.download-pagination svg{
+    @apply
+    cursor-pointer hover:scale-125 transition fill-secondary w-8 h-14
+}

@@ -1,7 +1,7 @@
 
 .header .header-menu{
     @apply
-    bg-ultraSoftBlue h-14 lg:h-24 relative z-50
+    bg-softGray h-14 lg:h-24 relative z-50
 }
 
 .header .header-menu .menu{

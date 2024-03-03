@@ -23,6 +23,8 @@ const config: Config = {
         regularBlue: '#053453',
         secondary: '#F8CA00',
         hardGray: '#435861',
+        regularGray: '#8097A2',
+        normalGray: '#BFCBD1',
         softGray: '#F2F2F2',
       },
       fontFamily: {

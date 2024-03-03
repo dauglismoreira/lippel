@@ -1,0 +1,14 @@
+#Jobs{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Jobs .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Jobs .page-content .container-form{
+    @apply
+    w-full max-w-[940px] py-12
+}

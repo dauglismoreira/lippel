@@ -1,0 +1,14 @@
+.title-cointainer{
+    @apply
+    w-full h-[56px] lg:h-[262px] bg-primary
+}
+
+.title-cointainer .title-content{
+    @apply
+    max-w-[1400px] mx-auto flex items-center h-full px-4
+}
+
+.title-cointainer .title-content h2{
+    @apply
+    text-white text-lg lg:text-5xl font-bold
+}

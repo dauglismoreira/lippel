@@ -1,0 +1,9 @@
+.section-high{
+    @apply
+    py-20 bg-primary px-4
+}
+
+.products-container{
+    @apply
+    flex gap-4 mx-auto w-full justify-center flex-col lg:flex-row
+}

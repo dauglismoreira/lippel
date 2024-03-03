@@ -1,0 +1,14 @@
+#Curriculum{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Curriculum .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Curriculum .page-content .container-form{
+    @apply
+    w-full max-w-[940px] pb-12 pt-0
+}

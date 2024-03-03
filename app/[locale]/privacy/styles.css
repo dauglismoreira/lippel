@@ -1,0 +1,24 @@
+#Privacy{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Privacy .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Privacy .page-content p{
+    @apply
+    text-lg text-hardGray mb-4
+}
+
+#Privacy .page-content ul{
+    @apply
+    list-none pl-12 lg:pl-40 py-4
+}
+
+#Privacy .page-content h3{
+    @apply
+    text-2xl text-primary font-semibold mb-8
+}

@@ -1,0 +1,43 @@
+#Financing{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Financing .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Financing .page-content .financing-row{
+    @apply
+    flex flex-col lg:flex-row gap-8 border-b border-normalGray py-8
+}
+
+#Financing .page-content .financing-row:last-child{
+    @apply
+    border-none
+}
+
+#Financing .page-content .financing-row .financing-sidebar{
+   flex:2;
+}
+
+#Financing .page-content .financing-row .financing-sidebar h3{
+    @apply
+    text-3xl text-primary font-bold
+}
+
+#Financing .page-content .financing-row .financing-body{
+    flex:4;
+}
+
+#Financing .page-content .financing-row .financing-body p{
+    @apply
+    text-lg text-hardGray mb-4
+}
+
+#Financing .page-content .financing-row .financing-body a{
+    @apply
+    text-primary mt-2 border-b border-primary font-semibold
+    hover:text-secondary hover:border-secondary
+}

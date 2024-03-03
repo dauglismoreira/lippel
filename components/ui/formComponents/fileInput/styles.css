@@ -1,0 +1,35 @@
+.file-input-container label{
+    @apply
+    h-16 flex gap-4 items-center border w-[200px] justify-center font-semibold
+    border-normalGray cursor-pointer
+}
+
+.file-input-container label svg{
+    @apply
+    stroke-primary w-6 h-6
+}
+
+.file-input-container .input{
+    @apply
+    flex gap-4 items-start lg:items-center flex-col lg:flex-row
+}
+
+.file-input-container .input input{
+    @apply
+    hidden
+}
+
+.file-input-container {
+    @apply
+    mb-6
+}
+
+.file-input-container span{
+    @apply
+    text-primary flex font-semibold gap-2 items-center cursor-pointer
+}
+
+.file-input-container span svg{
+    @apply
+    w-6 h-6 fill-red-600
+}
