@@ -21,17 +21,17 @@
 
 .download-list .list.header-list .list-item label{
     @apply
-    text-xs text-primary font-semibold  
+    text-xs text-primary font-semibold font-lato
 }
 
 .download-list .list.body-list .list-item h5{
     @apply
-    text-lg text-primary font-semibold  flex items-center gap-2
+    text-lg text-primary font-semibold  flex items-center gap-2 font-lato
 }
 
 .download-list .list.body-list .list-item p{
     @apply
-    text-lg text-hardGray
+    text-lg text-hardGray font-lato
 }
 
 .download-list .list.body-list .list-item img{
@@ -46,7 +46,7 @@
 
 .download-pagination span{
     @apply
-    text-primary font-semibold
+    text-primary font-semibold font-lato
 }
 
 .download-pagination svg{

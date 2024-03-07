@@ -16,6 +16,7 @@ interface GenericSliderProps {
     slidesNewOrder: (slides: any) => void;
     auto?: boolean;
     duration?: number;
+    externWidth?:number;
 }
 
 export interface GenericSliderRef {
@@ -25,7 +26,7 @@ export interface GenericSliderRef {
 }
 
 export const GenericSlider = forwardRef(({
-    duration, slides, auto, transition, perView, gap, onSlideChange, children, slidesNewOrder
+    duration, externWidth, slides, auto, transition, perView, gap, onSlideChange, children, slidesNewOrder
 }: GenericSliderProps, ref: Ref<GenericSliderRef>) => {
     const [sliderWidth, setSliderWidth] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(1);
@@ -34,18 +35,22 @@ export const GenericSlider = forwardRef(({
     const [width, setWidth] = useState(0)
 
     useEffect(() => {
-        const handleResize = () => {
-            if (wrapper.current) {
-                setWidth(wrapper.current.getBoundingClientRect().width)
+        if(!externWidth){
+            const handleResize = () => {
+                if (wrapper.current) {
+                    setWidth(wrapper.current.getBoundingClientRect().width)
+                }
             }
-        }
-        handleResize()
-        window.addEventListener('resize', handleResize)
+            handleResize()
+            window.addEventListener('resize', handleResize)
 
-        return () => {
-            window.removeEventListener('resize', handleResize)
+            return () => {
+                window.removeEventListener('resize', handleResize)
+            }
+        }else{
+            setWidth(externWidth)
         }
-    }, []);
+    }, [externWidth]);
 
     const [slidesToShow, setSlidesToShow] = useState(() => {
         const initialSlides = [];

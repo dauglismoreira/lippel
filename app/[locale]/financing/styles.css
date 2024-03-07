@@ -24,7 +24,7 @@
 
 #Financing .page-content .financing-row .financing-sidebar h3{
     @apply
-    text-3xl text-primary font-bold
+    text-3xl text-primary font-bold font-arhivo
 }
 
 #Financing .page-content .financing-row .financing-body{
@@ -33,11 +33,11 @@
 
 #Financing .page-content .financing-row .financing-body p{
     @apply
-    text-lg text-hardGray mb-4
+    text-lg text-hardGray mb-4 font-lato
 }
 
 #Financing .page-content .financing-row .financing-body a{
     @apply
     text-primary mt-2 border-b border-primary font-semibold
-    hover:text-secondary hover:border-secondary
+    hover:text-secondary hover:border-secondary font-lato
 }

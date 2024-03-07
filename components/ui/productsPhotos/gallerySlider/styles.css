@@ -1,0 +1,59 @@
+.gallery-slider{
+    @apply
+    w-full relative
+}
+
+.gallery-slider .slider-navigation{
+    @apply
+    max-w-[1400px] w-full mx-auto bg-white lg:h-32 w-full relative overflow-hidden
+}
+
+.gallery-slider .arrow-prev{
+    @apply
+    absolute top-[400px] left-12 hidden lg:block
+}
+
+.gallery-slider .arrow-next{
+    @apply
+    absolute top-[400px] right-12 hidden lg:block
+}
+
+.gallery-slider svg{
+    @apply
+    w-8 h-8 hover:scale-110 transition fill-white
+}
+
+/* .slider-navigation .index{
+    max-width: 1394px;
+
+    @apply
+    bg-white h-32 w-full relative overflow-hidden
+    hidden lg:block
+} */
+
+.gallery-slider .seletec-img-carousel{
+    @apply
+    h-[180px] lg:h-[869px] object-cover w-full
+}
+
+.gallery-slider .img-index-carousel{
+    @apply
+    object-cover h-[59px] lg:h-[164px] w-full
+}
+
+.gallery-slider .atual-slide-info{
+    @apply
+    max-w-[1400px] w-full mx-auto bg-white flex gap-4 items-center h-16 lg:h-8
+    lg:absolute lg:-mt-8 z-30 left-2/4 lg:-translate-x-2/4
+}
+
+.gallery-slider .atual-slide-info span{
+    @apply
+    h-16 lg:h-8 min-w-12 flex items-center justify-center bg-primary text-white
+    font-semibold text-2xl font-archivo px-4
+}
+
+.gallery-slider .atual-slide-info p{
+    @apply
+    text-lg text-hardGray font-lato
+}

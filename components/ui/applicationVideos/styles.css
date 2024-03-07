@@ -1,0 +1,41 @@
+.application-videos-container{
+    @apply
+    max-w-[930px] mx-auto pb-8 px-4
+}
+
+.application-videos-container h3{
+    @apply
+    text-white font-archivo font-semibold text-lg lg:text-3xl mb-8
+}
+
+.application-videos-container .videos-list-desktop{
+    @apply
+    w-full flex-wrap gap-4 hidden lg:flex
+}
+
+.application-videos-container .videos-list-desktop .video-container{
+    width:calc(50% - 1rem);
+
+    @apply
+    h-[257px] bg-white
+}
+
+.application-videos-container .videos-list-mobile{
+    @apply
+    block lg:hidden
+}
+
+.application-videos-container .videos-list-mobile .selected-video-container{
+    @apply
+    bg-white w-full h-[201px]
+}
+
+.application-videos-container .videos-list-mobile .video-index{
+    @apply
+    inline-flex gap-2 overflow-auto mt-4 w-full
+}
+
+.application-videos-container .videos-list-mobile .video-index .video-container{
+    @apply
+    min-w-[175px] h-[98px] bg-white
+}

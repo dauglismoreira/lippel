@@ -1,0 +1,19 @@
+.check-list{
+    @apply
+    flex gap-4 lg:gap-8 lg:items-center pb-8 flex-col lg:flex-row mt-4 lg:mt-0
+}
+
+.check-list .check-item{
+    @apply
+    flex items-center gap-2
+}
+
+.check-list .check-item input{
+    @apply
+    w-4 h-4
+}
+
+.check-list .check-item label{
+    @apply
+    text-sm font-lato font-normal
+}

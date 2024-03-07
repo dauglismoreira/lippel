@@ -1,0 +1,34 @@
+#Products{
+    @apply
+    w-full bg-softGray
+}
+
+#Products .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4 flex gap-0 lg:gap-8 flex-wrap pb-12 flex-col lg:flex-row
+}
+
+#Products .page-content .column{
+    @apply
+    flex-1
+}
+
+#Products .page-content .column p{
+    @apply
+    text-lg font-lato text-hardGray mb-4
+}
+
+#Products .title-cointainer{
+    @apply
+    h-[229px] lg:h-[456px]
+}
+
+#Products .catalog-products{
+    @apply
+    bg-darkBlue
+}
+
+#Products .catalog-products .catalog-container{
+    @apply
+    max-w-[1400px] mx-auto py-12 px-4
+}

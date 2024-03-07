@@ -5,7 +5,7 @@ import { HeaderContact } from "./headerContact";
 import { HeaderMenu } from "./headerMenu";
 import { FullSearch } from './headerMenu/fullSearch';
 import { ProductsList } from './headerMenu/productsList';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {productMenuMock} from './mock'
 import {servicesMenuMock} from './mock'
 import { ApplicationsList } from './headerMenu/applicationsList';
@@ -43,6 +43,14 @@ export const Header = () => {
         setActiveOverlayMenu(false)
         setSelectedMenu('')
     }
+
+    useEffect(() => {
+        document.documentElement.style.overflow = (activeOverlayMenu || activeMenu || activeSearchMenu) ? 'hidden' : 'auto';
+
+        return () => {
+            document.documentElement.style.overflow = 'auto';
+        };
+    }, [activeSearchMenu, activeMenu, activeOverlayMenu]);
 
     return(
         <>

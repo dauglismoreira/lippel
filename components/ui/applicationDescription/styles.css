@@ -1,0 +1,29 @@
+.application-description{
+    @apply
+    max-w-[930px] mx-auto py-20 px-4
+}
+
+.application-description h3{
+    @apply
+    text-white font-archivo font-semibold text-lg lg:text-3xl mb-8
+}
+
+.application-description li{
+    @apply
+    text-white flex gap-4 items-center pb-8 font-lato text-lg
+}
+
+.application-description li svg{
+    @apply
+    fill-secondary w-6 h-6
+}
+
+.application-description ul{
+    @apply
+    mb-12
+}
+
+.application-description p{
+    @apply
+    text-white font-lato mb-4 text-lg
+}

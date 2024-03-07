@@ -1,6 +1,6 @@
 .footer{
     @apply
-    bg-primary w-full py-8 lg:py-0
+    bg-primary w-full py-8 lg:py-0 font-lato
 }
 
 .footer-container{
@@ -24,7 +24,7 @@
 
 .footer-container.copyright{
     @apply
-    border-t border-softBlue 
+    border-t border-softBlue  font-lato
 }
 
 .footer-row.copyright{
@@ -48,7 +48,7 @@
 
 .footer-col.copyright a{
     @apply
-    hover:text-secondary
+    hover:text-secondary font-lato
 }
 
 
@@ -98,7 +98,7 @@
 
 .footer-col.social span.label{
     @apply
-    justify-start text-lg font-semibold
+    justify-start text-lg font-semibold font-lato
 }
 
 .footer-col.social span.label.desktop{
@@ -151,7 +151,7 @@
 
 .footer-container .footer-menu li{
     @apply
-    font-semibold py-2 text-lg hover:text-secondary
+    font-semibold py-2 text-lg hover:text-secondary font-lato
 }
 
 .footer-phones{
@@ -166,25 +166,25 @@
 
 .footer-row.menu h3{
     @apply
-    mb-4 lg:mb-8 font-semibold text-lg
+    mb-4 lg:mb-8 font-semibold text-lg font-lato
 }
 
 .footer-row.menu p{
     @apply
-    text-lg text-center lg:text-left
+    text-lg text-center lg:text-left font-lato
 }
 
 .footer-row.menu small{
     @apply
-    text-xs uppercase
+    text-xs uppercase font-lato
 }
 
 .footer-row.menu .footer-address{
     @apply
-    mt-4 
+    mt-4 font-lato
 }
 
 .footer-row.menu .email{
     @apply
-    mt-8 lg:mt-2
+    mt-8 lg:mt-2 font-lato
 }

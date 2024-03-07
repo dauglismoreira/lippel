@@ -1,0 +1,9 @@
+#News{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#News .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}

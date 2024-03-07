@@ -1,0 +1,12 @@
+.catalog-product-container{
+    @apply
+    relative
+}
+
+.catalog-product-container .catalog-result{
+    flex:2;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+
+    @apply
+    grid gap-6 mt-8
+}

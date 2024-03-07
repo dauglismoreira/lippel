@@ -1,0 +1,21 @@
+.anchorcmenu{
+    @apply
+    bg-primary w-full overflow-auto
+}
+
+.anchorcmenu-container{
+    @apply
+    max-w-[1400px] mx-auto flex h-12 lg:px-4
+}
+
+.anchorcmenu-container .menu-item{
+    @apply
+    px-4 h-full items-center flex justify-center text-white uppercase
+    font-lato font-semibold border-r border-regularSoftBlue hover:text-secondary
+    cursor-pointer whitespace-nowrap
+}
+
+.anchorcmenu-container .menu-item:nth-child(1){
+    @apply
+    border-l
+}

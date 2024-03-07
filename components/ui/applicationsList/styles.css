@@ -1,0 +1,61 @@
+.applications-list-container{
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+
+    @apply
+    gap-8 mb-8 hidden lg:grid
+}
+
+.applications-list-container h3{
+    @apply
+    text-hardGray font-bold text-lg mb-4 font-archivo
+}
+
+.applications-list-container li{
+    @apply
+    py-2
+}
+
+.applications-list-container a{
+    @apply
+    text-primary  font-semibold hover:text-secondary font-lato
+}
+
+.applications-accordion-container{
+    @apply
+    block lg:hidden
+}
+
+.applications-accordion-container .application-accordion-item{
+    @apply
+    px-4 border-b border-normalGray pb-4 h-20 overflow-hidden
+}
+
+.applications-accordion-container .application-accordion-item .accordion-title{
+    @apply
+    w-full flex justify-between items-center py-4 h-20 
+}
+
+.applications-accordion-container .application-accordion-item .accordion-title h3{
+    @apply
+    text-hardGray text-lg font-semibold font-archivo
+}
+
+.applications-accordion-container .application-accordion-item .accordion-title svg{
+    @apply
+    w-6 h-6 fill-secondary
+}
+
+.applications-accordion-container .application-accordion-item li a{
+    @apply
+    text-primary  font-semibold hover:text-secondary font-lato
+}
+
+.applications-accordion-container .application-accordion-item li{
+    @apply
+    py-2
+}
+
+.applications-accordion-container .application-accordion-item.open{
+    @apply
+    h-max
+}

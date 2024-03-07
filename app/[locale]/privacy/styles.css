@@ -10,15 +10,15 @@
 
 #Privacy .page-content p{
     @apply
-    text-lg text-hardGray mb-4
+    text-lg text-hardGray mb-4 font-lato
 }
 
 #Privacy .page-content ul{
     @apply
-    list-none pl-12 lg:pl-40 py-4
+    list-none pl-12 lg:pl-40 py-4 font-lato
 }
 
 #Privacy .page-content h3{
     @apply
-    text-2xl text-primary font-semibold mb-8
+    text-2xl text-primary font-semibold mb-8 font-archivo
 }

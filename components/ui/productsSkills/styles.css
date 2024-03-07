@@ -1,0 +1,33 @@
+.products-skills{
+    @apply
+    max-w-[1400px] mx-auto pt-8 lg:py-16 px-4
+}
+
+.products-skills h3{
+    @apply
+    text-lg lg:text-3xl font-semibold font-archivo text-primary mb-8
+}
+
+.products-skills .skills-container{
+    @apply
+    flex gap-4 lg:gap-12 mx-auto flex-col lg:flex-row
+}
+
+.products-skills .skills-container .skills-items{
+    flex:1;
+}
+
+.products-skills .skills-container .skills-items h4{
+    @apply
+    font-lato text-darkBlue text-lg lg:text-2xl font-semibold mb-4
+}
+
+.products-skills .skills-container .skills-items li{
+    @apply
+    list-none text-lg font-lato text-hardGray flex items-center gap-2 py-4
+}
+
+.products-skills .skills-container .skills-items li svg{
+    @apply
+    w-6 h-6 fill-darkBlue
+}

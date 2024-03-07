@@ -1,0 +1,52 @@
+.blog-search{
+    @apply
+    flex flex-col gap-6
+}
+
+.blog-search .blog-search-card{
+    @apply
+    p-8 bg-white hidden lg:block
+}
+
+.blog-search .blog-search-card.mobile-filter{
+    @apply
+    block p-2
+}
+
+.blog-search .blog-search-card h3{
+    @apply
+    font-archivo text-primary text-lg lg:text-2xl font-semibold
+}
+
+.blog-search .blog-search-bar{
+    @apply
+    bg-white h-12 flex justify-between
+}
+
+.blog-search .blog-search-bar.mobile-filter{
+    @apply
+    hidden
+}
+
+.blog-search .blog-search-bar fieldset{
+    width:calc(100% - 3rem);
+    
+    @apply
+    h-12
+}
+
+.blog-search .blog-search-bar fieldset input{
+    @apply
+    h-full w-full px-2 outline-none
+}
+
+.blog-search .blog-search-bar span{
+    @apply
+    h-full w-12 bg-secondary flex items-center justify-center cursor-pointer
+    hover:scale-105 transition
+}
+
+.blog-search .blog-search-bar span svg{
+    @apply
+    w-6 h-6 stroke-strongBlue
+}

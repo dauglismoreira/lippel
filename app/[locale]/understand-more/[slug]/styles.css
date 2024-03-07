@@ -1,0 +1,49 @@
+#Understand{
+    @apply
+    w-full bg-softGray
+}
+
+#Understand .page-content{
+    @apply
+    max-w-[930px] mx-auto px-4
+}
+
+#Understand .page-content h3{
+    @apply
+    font-archivo text-primary font-semibold text-3xl mb-8
+}
+
+#Understand .page-content p{
+    @apply
+    font-lato text-hardGray text-lg mb-4
+}
+
+#Understand .page-content small{
+    @apply
+    font-lato text-hardGray text-sm mb-4
+}
+
+#Understand .page-content ul{
+    @apply
+    mb-8 mt-2 list-disc pl-4
+}
+
+#Understand .page-content li{
+    @apply
+    font-lato text-hardGray text-sm mb-1
+}
+
+#Understand .page-content img{
+    @apply
+    max-w-full mb-8
+}
+
+#Understand .sub-title-container{
+    @apply
+    max-w-[930px] mx-auto  px-4
+}
+
+#Understand .sub-title-container h3{
+    @apply
+    text-primary font-archivo font-semibold text-lg lg:text-3xl mb-8 mt-12
+}

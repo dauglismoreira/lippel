@@ -1,0 +1,36 @@
+.category-filter-container{
+    @apply
+    mt-8
+}
+
+.category-filter-container.mobile{
+    @apply
+    block lg:hidden
+}
+
+.category-filter-container.desktop{
+    @apply
+    lg:block hidden
+}
+
+.category-filter-container li{
+    @apply
+    text-hardGray uppercase font-semibold py-4 px-2  w-full border-b border-normalGray
+    list-none flex gap-2 items-center cursor-pointer hover:text-primary
+    hover:pl-4
+}
+
+.category-filter-container li svg{
+    @apply
+    fill-hardGray w-6 h-6
+}
+
+.category-filter-container li.active{
+    @apply
+    text-primary pl-4 bg-ultraSoftBlue
+}
+
+.category-filter-container select{
+    @apply
+    w-full h-12 border border-normalGray outline-none px-2
+}

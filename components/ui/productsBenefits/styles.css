@@ -1,0 +1,54 @@
+.benefits-container{
+    @apply
+    bg-primary flex lg:flex-wrap flex-col lg:flex-row pt-12 lg:pt-8
+}
+
+.benefits-container .benefits-items,
+.benefits-container .benefits-image{
+    width:50%;
+}
+
+@media(max-width:1024px){
+    .benefits-container .benefits-items,
+    .benefits-container .benefits-image{
+        width:100%;
+    }
+}
+
+.benefits-container .benefits-image img{
+    @apply
+    object-cover h-[250px] lg:h-[614px] w-full
+}
+
+.benefits-container .contact-bar{
+    @apply
+    lg:h-[104px] bg-darkBlue flex items-center justify-center
+    gap-4 py-4 lg:py-0 lg:gap-16 flex-col lg:flex-row px-4
+}
+
+.benefits-container .benefits-items{
+    @apply
+    flex flex-col justify-center pr-12
+}
+
+.benefits-container .contact-bar h5{
+    @apply
+    text-white font-archivo font-semibold text-lg lg:text-2xl max-w-[420px]
+    text-center lg:text-left
+}
+
+.benefits-container .benefits-items h3{
+    @apply
+    text-white font-semibold font-archivo text-lg lg:text-3xl mb-8
+}
+
+.benefits-container .benefits-items li{
+    @apply
+    text-white text-lg font-lato list-none mb-4 border-b border-softBlue
+    pb-4
+}
+
+.benefits-container .contact-bar button{
+    @apply
+    hover:bg-secondary hover:text-darkBlue hover:underline
+}

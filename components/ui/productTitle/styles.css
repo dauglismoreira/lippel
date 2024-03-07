@@ -1,0 +1,73 @@
+.product-title-container{
+    @apply
+    w-full h-[247px] lg:h-[760px] bg-darkBlue bg-center bg-cover
+}
+
+.product-title-container .title-container{
+    @apply
+    block lg:hidden m-0 p-0
+}
+
+.product-title-container .title-container h3{
+    @apply
+    text-white bg-primary p-2
+}
+
+.product-title-container .product-title-info{
+    @apply
+    mx-auto flex justify-start lg:justify-end items-center h-full px-4 lg:px-8
+}
+
+.product-title-container .card-container{
+    width:456px;
+    max-width:100%;
+
+    @apply
+    p-8 bg-white flex-col items-center gap-4 transition h-auto hidden lg:flex
+}
+
+.product-title-container .card-container  .card-info{
+    @apply
+    w-full flex flex-col gap-2
+}
+
+.product-title-container .card-container  .card-info h3{
+    font-size:10px;
+    @apply
+    text-softBlue uppercase font-semibold font-lato
+}
+
+.product-title-container .card-container  .card-info h2{
+    @apply
+    text-2xl text-primary font-bold h-16 font-archivo
+}
+
+.product-title-container .card-container .skills-container{
+    @apply
+    flex flex-col my-4
+}
+
+.product-title-container .card-container .skills-container li{
+    @apply
+    flex list-none flex-wrap items-center border-b py-4 font-lato
+}
+
+.product-title-container .card-container .skills-container li p{
+    @apply
+    flex-1 text-sm text-hardGray
+}
+
+.product-title-container .card-container .skills-container li span{
+    @apply
+    flex-1  text-sm text-hardGray font-bold
+}
+
+.product-title-container .card-container button{
+    @apply
+    bg-secondary text-darkBlue w-full  h-12 font-semibold uppercase mt-2 font-lato
+}
+
+.product-title-container .card-container:hover button{
+    @apply
+    underline
+}

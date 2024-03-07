@@ -1,0 +1,14 @@
+.search-page .search-input-container{
+    @apply
+    w-full mx-auto flex items-center border-b border-primary
+}
+
+.search-page .search-input-container svg{
+    @apply
+    text-primary w-8 h-8 
+}
+
+.search-page .search-input-container input{
+    @apply
+    w-full px-2 h-16 outline-none
+}

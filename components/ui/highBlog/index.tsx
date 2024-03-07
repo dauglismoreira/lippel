@@ -2,7 +2,11 @@ import './styles.css'
 import { BlogCard } from '../blogCard';
 import { TitleSection } from '../sectionTitle/intex';
 
-export const HighBlog = () => {
+interface HighBlogProps{
+    title:string;
+}
+
+export const HighBlog = ({title}: HighBlogProps) => {
     const highMock = [
         {
             cover:'',
@@ -33,7 +37,7 @@ export const HighBlog = () => {
 
     return (
     <div className="section-blog">
-        <TitleSection color="text-primary" title="Últimas Notícias"/>
+        <TitleSection color="text-primary" title={title ? title : "Últimas Notícias"}/>
         <div className="blog-container">
             {highMock.map((post, index) => (
                 <BlogCard key={index} data={post}/>

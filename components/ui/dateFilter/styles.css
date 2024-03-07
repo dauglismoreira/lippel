@@ -1,0 +1,14 @@
+.date-filter-container{
+    @apply
+    flex gap-2 flex-wrap mt-8
+}
+
+.date-filter-container .container-input{
+    @apply
+    px-2 border border-normalGray h-12
+}
+
+.date-filter-container .container-input select{
+    @apply
+    w-full h-full outline-none
+}

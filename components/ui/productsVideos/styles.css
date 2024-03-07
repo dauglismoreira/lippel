@@ -1,0 +1,14 @@
+.products-video-gallery{
+    @apply
+    w-full lg:pt-12 max-w-[1400px] mx-auto px-4
+}
+
+.title-container{
+    @apply
+    max-w-[1400px] mx-auto py-8 lg:px-4
+}
+
+.title-container h3{
+    @apply
+    text-primary font-archivo font-semibold text-lg lg:text-3xl
+}

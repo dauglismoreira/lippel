@@ -1,0 +1,60 @@
+.catalog-blog-container{
+    @apply
+    flex gap-6 flex-col-reverse lg:flex-row lg:flex-wrap relative
+}
+
+.catalog-blog-container .catalog-result{
+    flex:2;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    @apply
+    grid gap-6
+}
+
+.catalog-blog-container .filter-sidebar{
+    flex:1;
+
+    @apply
+    flex flex-col gap-6
+}
+
+.catalog-blog-container .mobile-toogle{
+    @apply
+    absolute -top-14 right-2 flex lg:hidden items-center text-primary uppercase
+    font-lato font-semibold gap-2
+}
+
+.catalog-blog-container .mobile-toogle svg{
+    @apply
+    w-8 h-8 fill-secondary
+}
+
+.catalog-blog-container  .toogle-filters-container{
+    transform:translate(0, -150%);
+    @apply
+    fixed w-full bg-white z-50 top-0 right-0 py-8 px-4 transition
+}
+
+.catalog-blog-container  .toogle-filters-container.active{
+    transform:translate(0, 0);
+}
+
+.catalog-blog-container  .toogle-filters-container .close-button{
+    @apply
+    absolute top-4 right-4
+}
+
+.catalog-blog-container  .toogle-filters-container .close-button svg{
+    @apply
+    w-8 h-8 fill-primary
+}
+
+.catalog-blog-container .filter-overlay{
+    @apply
+    fixed inset-0 bg-black opacity-70 hidden
+}
+
+.catalog-blog-container .filter-overlay.active{
+    @apply
+    block
+}

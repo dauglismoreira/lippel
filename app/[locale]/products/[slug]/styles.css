@@ -1,0 +1,52 @@
+#Product{
+    @apply
+    w-full bg-softGray
+}
+
+#Product .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+#Product .introduction-container{
+    @apply
+    pb-12 pt-4
+}
+
+#Product .introduction-container h3{
+    @apply
+    text-primary text-3xl font-archivo font-bold mb-8
+}
+
+#Product .introduction-container .introduction{
+    @apply
+    flex gap-0 lg:gap-8 flex-col lg:flex-row
+}
+
+#Product .introduction-container .introduction p{
+    @apply
+    text-hardGray text-lg mb-4
+}
+
+#Product .introduction-container .introduction p b{
+    @apply
+    font-semibold
+}
+
+
+@media(max-width:1024px){
+    #Product .section-high, #Product .section-blog{
+        @apply
+        py-4
+    }
+    
+    #Product .section-high h2, #Product .section-blog h2{
+        @apply
+        text-lg mb-0
+    }
+
+    #Product .section-high .title-container, #Product .section-blog .title-container{
+        @apply
+        py-4
+    }
+}

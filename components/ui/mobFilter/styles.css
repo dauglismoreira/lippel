@@ -1,0 +1,15 @@
+.mob-filter-container{
+    @apply
+    flex gap-2 flex-wrap
+}
+
+.mob-filter-container button{
+    @apply
+    text-white uppercase font-semibold border border-white
+    px-4 py-2 hover:border-secondary hover:underline
+}
+
+.mob-filter-container button.active{
+    @apply
+    border-secondary underline text-secondary
+}

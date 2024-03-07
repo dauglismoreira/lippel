@@ -1,6 +1,6 @@
 .section-high{
     @apply
-    py-20 bg-primary px-4
+    py-20 px-4
 }
 
 .products-container{

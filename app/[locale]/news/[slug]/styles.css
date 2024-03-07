@@ -1,0 +1,49 @@
+#Application{
+    @apply
+    w-full bg-softGray
+}
+
+#Application .page-content{
+    @apply
+    max-w-[930px] mx-auto px-4
+}
+
+#Application .page-content p{
+    @apply
+    text-lg text-hardGray mb-4
+}
+
+#Application .page-content p b{
+    @apply
+    font-semibold
+}
+
+#Application .application-gallery{
+    @apply
+    mb-12
+}
+
+#Application .application-desc{
+    @apply
+    bg-strongBlue
+}
+
+#Application .sub-title-container{
+    @apply
+    max-w-[930px] mx-auto  px-4
+}
+
+#Application .sub-title-container h3{
+    @apply
+    text-white font-archivo font-semibold text-lg lg:text-3xl mb-8 mt-12
+}
+
+#Application .products-container{
+    @apply
+    flex gap-4 mx-auto w-full justify-center flex-col lg:flex-row px-4 pb-16
+}
+
+#Application .title-cointainer{
+    @apply
+    h-[229px] lg:h-[456px]
+}

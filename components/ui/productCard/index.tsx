@@ -8,7 +8,7 @@ export const ProductCard = ({data}: ProductCardProps) => {
     return(
         <div className="card-container">
             <div className="card-image" style={{
-                backgroundImage: `url('${data.cover !== '' ? data.cover : 'placeholder-gray.jpg'}')`
+                backgroundImage: `url('${data.cover !== '' ? data.cover : '/placeholder-gray.jpg'}')`
             }}></div>
             <div className="card-info">
                 <h3>{data.category}</h3>

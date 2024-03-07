@@ -1,0 +1,102 @@
+.variations-product{
+    @apply
+    bg-darkBlue lg:pt-[460px] lg:-mt-[400px] pb-4 lg:pb-20
+    pt-[306px] -mt-[260px]
+}
+
+.variations-product .variations-container{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}
+
+.variations-product .variations-container h3{
+    @apply
+    text-3xl text-white font-archivo font-semibold
+}
+
+.variations-product .variations-container p{
+    @apply
+    font-lato text-white text-lg mb-8
+}
+
+.variations-product .variations-container small{
+    @apply
+    font-lato text-white text-xs uppercase
+}
+
+.variations-product .variations-container .variations{
+    @apply
+    flex gap-12 lg:flex-wrap flex-col lg:flex-row
+}
+
+.variations-product .variations-container .variations .col{
+    flex:1;
+}
+
+.variations-product .variations-container .variations .variations-select{
+    @apply
+    w-full gap-12 mt-2 flex-col lg:flex-row hidden lg:flex
+}
+
+.variations-product .variations-container .variations .variations-select span{
+    @apply
+    flex gap-2 items-center text-2xl text-softGray font-semibold font-archivo
+    hover:text-secondary cursor-pointer
+}
+
+.variations-product .variations-container .variations .variations-select span.active{
+    @apply
+    text-secondary
+}
+
+.variations-product .variations-container .variations .variations-list{
+    @apply
+    lg:mt-12 mt-6
+}
+
+.variations-product .variations-container .variations .variations-list li{
+    @apply
+    flex w-full justify-between max-w-[480px] border-t border-strongBlue
+    pt-8
+}
+
+.variations-product .variations-container .variations .variations-list li p{
+    @apply
+    text-softGray font-lato text-sm lg:text-base
+}
+
+.variations-product .variations-container .variations .variations-list li span{
+    @apply
+    text-softGray font-semibold font-lato
+}
+
+.variations-product .variations-container .variations .variations-list li:nth-child(5){
+    @apply
+    border-b
+}
+
+.variations-product .variations-container .variations .variations-list a.desktop-link{
+    @apply
+    text-secondary gap-2 items-center my-8 hover:underline hidden lg:flex
+}
+
+.variations-product .variations-container a.mobile-link{
+    @apply
+    text-secondary gap-2 items-center my-8 hover:underline lg:hidden flex
+    justify-center
+}
+
+.variations-product .variations-select-mobile{
+    @apply
+    block lg:hidden w-full pr-2
+}
+
+.variations-product .variations-select-mobile select{
+    @apply
+    w-full h-14 bg-transparent text-white font-lato text-2xl font-semibold outline-none
+}
+
+.variations-product .variations-select-mobile select option{
+    @apply
+    text-hardGray
+}

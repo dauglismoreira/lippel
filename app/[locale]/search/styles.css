@@ -1,0 +1,9 @@
+#Search{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Search .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}

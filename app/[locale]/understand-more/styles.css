@@ -1,0 +1,11 @@
+#UnderstandMore{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#UnderstandMore .page-content{
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+
+    @apply
+    max-w-[1400px] mx-auto px-4 grid gap-4 pb-8
+}

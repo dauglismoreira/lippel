@@ -30,7 +30,7 @@
 
 #About .page-content .section h1{
     @apply
-    text-2xl lg:text-7xl text-white font-bold mb-4 lg:mb-20
+    text-2xl lg:text-7xl text-white font-black mb-4 lg:mb-20 font-archivo
 }
 
 #About .page-content .section .row{
@@ -47,7 +47,7 @@
 
 #About .page-content .section .row .side-bar h3{
     @apply
-    font-bold text-lg lg:text-2xl text-white
+    font-bold text-lg lg:text-2xl text-white font-archivo
 }
 
 #About .page-content .section .row .body{
@@ -56,7 +56,7 @@
 
 #About .page-content .section .row .body p{
     @apply
-    text-white text-lg mb-8
+    text-white text-lg mb-8 font-lato
 }
 
 #About .page-content.banner-section{
@@ -77,6 +77,7 @@
 #About .page-content.banner-section .section .row .body h2{
     @apply
     text-2xl lg:text-5xl text-white font-bold lg:leading-snug mb-4 lg:mb-8 lg:-mt-3
+    font-archivo
 }
 
 #About .page-content.banner-section .section .row a,
@@ -97,7 +98,12 @@
 
 #About .page-content.values-section .section .row .body p{
     @apply
-    text-hardGray text-lg mb-8
+    text-hardGray text-lg mb-8 font-lato
+}
+
+#About .page-content.values-section .section .row h4{
+    @apply
+    font-archivo
 }
 
 #About .page-content.values-section .section .row .body ul{
@@ -109,12 +115,12 @@
 
 #About .page-content.values-section .section .row .body ul li{
     @apply
-    flex items-center gap-2
+    flex items-center gap-2 font-lato
 }
 
 #About .page-content.values-section .section .row .body ul li span{
     @apply
-    text-secondary font-bold
+    text-secondary font-bold font-lato
 }
 
 #About .page-content.values-section .section .side-bar .index{

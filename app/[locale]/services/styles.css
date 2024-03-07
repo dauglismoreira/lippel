@@ -10,5 +10,5 @@
 
 #Services .page-content p{
     @apply
-    text-lg text-hardGray  max-w-[930px]
+    text-lg text-hardGray  max-w-[930px] font-lato
 }

@@ -1,6 +1,6 @@
 .title-cointainer{
     @apply
-    w-full h-[56px] lg:h-[262px] bg-primary
+    w-full h-[56px] lg:h-[262px] bg-darkBlue bg-center bg-cover
 }
 
 .title-cointainer .title-content{

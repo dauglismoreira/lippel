@@ -10,17 +10,17 @@
 
 .contact-form-container fieldset label{
     @apply
-    text-lg font-semibold text-hardGray
+    text-lg font-semibold text-hardGray font-lato
 }
 
 .contact-form-container fieldset input{
     @apply
-    w-full border bg-softGray border-normalGray h-14 outline-none px-2
+    w-full border bg-softGray border-normalGray h-14 outline-none px-2 font-lato
 }
 
 .contact-form-container fieldset textarea{
     @apply
-    w-full border bg-softGray border-normalGray outline-none p-2
+    w-full border bg-softGray border-normalGray outline-none p-2 font-lato
 }
 
 .input-grid-container{
@@ -32,17 +32,17 @@
 
 .contact-form-container h2{
     @apply
-    text-3xl text-primary font-semibold mb-2
+    text-3xl text-primary font-semibold mb-2 font-archivo
 }
 
 .contact-form-container h3{
     @apply
-    text-lg text-primary font-semibold
+    text-lg text-primary font-semibold font-archivo
 }
 
 .contact-form-container p{
     @apply
-    text-lg text-hardGray mb-8
+    text-lg text-hardGray mb-8 font-lato
 }
 
 .contact-form-container .acceptToogle{
@@ -57,7 +57,7 @@
 
 .contact-form-container .acceptToogle label{
     @apply
-    text-sm text-hardGray  max-w-[900px]
+    text-sm text-hardGray  max-w-[900px] font-lato
 }
 
 .contact-form-container .container-buttons{
@@ -83,9 +83,10 @@
 .select-container select{
     @apply
     w-full h-14 bg-transparent outline-none text-white font-semibold pb-2 pl-2
+    font-lato
 }
 
 .select-container select option{
     @apply
-    text-hardGray
+    text-hardGray font-lato
 }

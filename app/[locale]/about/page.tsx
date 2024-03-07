@@ -57,6 +57,7 @@ export default async function About() {
     ]
   }
 
+  
   return (
     <main id="About">
       <div className="page-content">

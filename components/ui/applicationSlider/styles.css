@@ -1,0 +1,34 @@
+.application-slider h3{
+    @apply
+    text-primary font-archivo font-semibold text-3xl
+}
+
+.application-slider{
+    @apply
+    flex flex-col gap-4 mt-12
+}
+
+.application-slider-wrapper{
+    @apply
+    relative
+}
+
+.application-slider-wrapper img{
+    @apply
+    w-[692px] h-[389px] object-cover
+}
+
+.slider-navigation .arrows{
+    @apply
+    flex gap-16 justify-between lg:justify-start pr-2 lg:pr-0
+}
+
+.slider-navigation .arrows svg{
+    @apply
+    w-6 h-6 fill-primary transition hover:scale-125
+}
+
+.application-slider .slide-index{
+    @apply
+    absolute bottom-0 bg-primary p-2 text-white font-archivo text-2xl font-semibold
+}

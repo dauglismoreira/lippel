@@ -16,12 +16,12 @@
 
 .title-container h2{
     @apply
-    font-semibold text-3xl text-center lg:text-left mb-8 lg:mb-0
+    font-semibold text-3xl text-center lg:text-left mb-8 lg:mb-0 font-archivo
 }
 
 .menu{
     @apply
-    flex gap-8 lg:gap-4 text-white overflow-auto lg:overflow-hidden
+    flex gap-8 lg:gap-4 text-white overflow-auto lg:overflow-hidden font-lato
 }
 
 .menu .items{

@@ -1,0 +1,24 @@
+.application-contact-banner-container{
+    @apply
+    bg-center bg-cover h-[241px] flex items-center justify-center flex-col
+}
+
+.application-contact-banner-container .banner-content{
+    @apply
+    flex flex-col justify-center items-center gap-4
+}
+
+.application-contact-banner-container .banner-content h1{
+    @apply
+    font-archivo text-2xl font-semibold text-white max-w-[420px] text-center
+}
+
+.application-contact-banner-container .banner-content button{
+    @apply
+    lg:w-[456px] w-full
+}
+
+.application-contact-banner-container .banner-content a{
+    @apply
+    w-full px-4
+}

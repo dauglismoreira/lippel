@@ -22,10 +22,11 @@
 .slide-content h3{
     @apply
     bg-strongBlue p-2 text-white uppercase lg:font-bold w-max lg:-mt-20
-    text-xs lg:text-2xl
+    text-xs lg:text-2xl font-archivo
 }
 
 .slide-content h2{
     @apply
     bg-primary p-4 text-white font-bold lg:font-black text-lg lg:text-6xl w-max
+    font-archivo
 }

@@ -1,0 +1,36 @@
+.products-related-navigation{
+    @apply
+    max-w-[930px] mx-auto py-8 px-4
+}
+
+.products-related-navigation .share{
+    @apply
+    w-full border-b border-normalGray pb-4
+}
+
+.products-related-navigation .share button{
+    @apply
+    flex gap-2 items-center font-lato font-semibold text-hardGray
+    transition hover:scale-105
+}
+
+.products-related-navigation .arrows{
+    @apply
+    flex justify-between py-4 items-center
+}
+
+.products-related-navigation .arrows button{
+    @apply
+    flex gap-2 items-center uppercase text-hardGray font-semibold font-lato
+    transition hover:scale-105
+}
+
+.products-related-navigation .arrows button svg{
+    @apply
+    w-8 h-8
+}
+
+.products-related-container{
+    @apply
+    px-4
+}

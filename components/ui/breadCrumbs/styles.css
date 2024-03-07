@@ -11,7 +11,7 @@
 .bread-cointainer .bread-content a{
     @apply
     text-xs text-regularGray flex gap-2 hover:text-secondary items-center
-    hidden lg:block
+    hidden lg:flex font-lato
 }
 
 .bread-cointainer .bread-content a:last-child{
@@ -35,7 +35,7 @@
     block lg:hidden h-6 w-6 fill-primary
 }
 
-.bread-cointainer .bread-content a:nth-child(2){
+.bread-cointainer .bread-content a:nth-last-child(2){
     @apply
     flex
 }

@@ -21,15 +21,15 @@
 
 .job-list .list.header-list .list-item label{
     @apply
-    text-xs text-primary uppercase font-semibold  
+    text-xs text-primary uppercase font-semibold font-lato
 }
 
 .job-list .list.body-list .list-item h3{
     @apply
-    text-lg text-primary font-semibold  flex items-center gap-2
+    text-lg text-primary font-semibold  flex items-center gap-2 font-arhivo
 }
 
 .job-list .list.body-list .list-item p{
     @apply
-    text-sm text-hardGray
+    text-sm text-hardGray font-lato
 }

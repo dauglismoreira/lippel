@@ -1,0 +1,9 @@
+#Applications{
+    @apply
+    w-full pb-8 bg-softGray
+}
+
+#Applications .page-content{
+    @apply
+    max-w-[1400px] mx-auto px-4
+}

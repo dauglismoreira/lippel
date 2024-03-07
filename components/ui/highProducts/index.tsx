@@ -5,7 +5,14 @@ import { ProductCard } from '../productCard';
 import { useState } from 'react';
 import { TitleSection } from '../sectionTitle/intex';
 
-export const HighProducts = () => {
+interface HighProductsProps {
+    title?:string;
+    menu?:boolean;
+    bg?:string;
+    text?:string;
+}
+
+export const HighProducts = ({title, menu, bg, text}: HighProductsProps) => {
     const [selectedItem, setselectedItem] = useState('todos')
     const highMock = [
         {
@@ -103,8 +110,8 @@ export const HighProducts = () => {
 
 
     return (
-    <div className="section-high">
-        <TitleSection data={menuMock} title="Destaque"/>
+    <div className={`section-high ${bg ? bg : 'bg-primary'}`}>
+        <TitleSection color={text} data={menu ? menuMock : []} title={title ? title : "Destaque"}/>
         <div className="products-container">
             {highMock.map((product, index) => (
                 <ProductCard key={index} data={product}/>

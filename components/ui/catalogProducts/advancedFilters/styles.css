@@ -1,0 +1,128 @@
+.product-advanced-search{
+    height:calc(100vh - 153px);
+    transform:translate(110%, 0);
+    @apply
+    flex flex-col gap-6 bg-white fixed right-0 top-[153px] w-[480px] p-8 z-50 transition
+    overflow-auto
+}
+
+@media(max-width:768px){
+    .product-advanced-search{
+        height:calc(100vh - 53px);
+        transform:translate(0, -150%);
+        @apply
+        flex flex-col gap-6 bg-white fixed right-0 top-0 w-full p-8 z-50 transition
+        overflow-auto
+    }
+}
+
+.product-advanced-search.active{
+    transform:translate(0, 0);
+
+    @apply
+    shadow-lg
+}
+
+
+.product-advanced-search .range-container{
+    @apply
+    w-full
+}
+
+.product-advanced-search .range-container .range{
+    @apply
+    w-full
+}
+
+.product-advanced-search .range-container .multi-range-slider .bar-left,
+.product-advanced-search .range-container .multi-range-slider .bar-right,
+.product-advanced-search .range-container .multi-range-slider .bar-inner,
+.product-advanced-search .range-container  .multi-range-slider .thumb::before{
+    box-shadow:none;
+    border:none;
+}
+
+.product-advanced-search .range-container  .multi-range-slider .thumb::before{
+    @apply
+    bg-secondary w-4 h-4 top-1
+}
+
+.product-advanced-search .range-container .multi-range-slider .thumb .caption{
+    @apply
+    hidden
+}
+
+.range-values-container{
+    @apply
+    flex w-full justify-between text-hardGray text-sm font-lato font-bold -mt-2
+}
+
+.product-advanced-search label{
+    @apply
+    text-hardGray text-sm font-lato font-semibold -mt-2
+}
+
+.product-advanced-search .advanced-filter-row{
+    @apply
+    border-t border-normalGray pt-6
+}
+
+.product-advanced-search .advanced-filter-row .mob-filter-container button{
+    @apply
+    border-hardGray text-hardGray hover:text-primary
+}
+
+.product-advanced-search .advanced-filters-head{
+    @apply
+    flex justify-between items-center
+}
+
+.product-advanced-search .advanced-filters-head h3{
+    @apply
+    text-2xl font-archivo text-primary font-semibold
+}
+
+.product-advanced-search .advanced-filters-head svg{
+    @apply
+    cursor-pointer w-6 h-6 fill-primary hover:scale-125 transition
+}
+
+.catalog-product-overlay{
+    @apply
+    fixed inset-0 w-full h-full bg-black z-40 opacity-70 hidden
+}
+
+.catalog-product-overlay.active{
+    @apply
+    block
+}
+
+.product-advanced-search .mob-filter-container.advanced{
+    @apply
+    flex flex-col gap-6 pt-2
+}
+
+.product-advanced-search .mob-filter-container.advanced .option{
+    @apply
+    flex items-center gap-2
+}
+
+.product-advanced-search .mob-filter-container.advanced .option label{
+    @apply
+    -mb-2 text-base
+}
+
+.product-advanced-search .advanced-filter-row.buttons{
+    @apply
+    flex-row justify-between w-full flex
+}
+
+.product-advanced-search .advanced-filter-row.buttons button{
+    @apply
+    px-2 lg:px-4
+}
+
+.product-advanced-search .advanced-filter-row.buttons button:nth-child(2){
+    @apply
+    border border-hardGray text-hardGray bg-white hover:text-white hover:bg-hardGray
+}

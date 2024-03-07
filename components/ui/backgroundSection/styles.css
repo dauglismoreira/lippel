@@ -16,7 +16,7 @@
    font-size:64px;
 
    @apply
-   bg-primary text-white px-4 font-black
+   bg-primary text-white px-4 font-black font-archivo
 }
 
 @media(max-width:1024px){

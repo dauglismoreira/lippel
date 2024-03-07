@@ -23,18 +23,18 @@
 .blog-card-container  .blog-card-info h3{
     font-size:12px;
     @apply
-    text-hardGray uppercase font-semibold flex gap-2 items-center py-4
+    text-hardGray uppercase font-semibold flex gap-2 items-center py-4 font-lato
 }
 
 .blog-card-container  .blog-card-info h2{
     @apply
-    text-2xl text-primary font-bold h-20
+    text-2xl text-primary font-bold h-20 font-archivo
 }
 
 
 .blog-card-container  .blog-card-info p{
     @apply
-    text-hardGray text-lg h-28
+    text-hardGray text-lg h-28 font-lato
 }
 
 .blog-card-container button{

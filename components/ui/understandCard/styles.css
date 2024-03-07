@@ -1,0 +1,53 @@
+.understand-card-container{
+    width:456px;
+    height:572px;
+    max-width:100%;
+
+    @apply
+    p-4 bg-white flex flex-col items-center gap-4 transition cursor-pointer
+    hover:border-2 hover:border-secondary
+}
+
+.understand-card-container .understand-card-image{
+    height:285px;
+
+    @apply
+    w-full bg-center bg-cover
+}
+
+.understand-card-container  .understand-card-info{
+    @apply
+    w-full flex flex-col gap-2
+}
+
+.understand-card-container  .understand-card-info h2{
+    @apply
+    text-2xl text-primary font-bold h-20 font-archivo
+}
+
+
+.understand-card-container  .understand-card-info p{
+    @apply
+    text-hardGray text-lg h-28 font-lato
+}
+
+.understand-card-container button{
+    @apply
+    bg-secondary text-darkBlue w-36 h-12 font-semibold uppercase mt-2
+}
+
+.understand-card-container:hover button{
+    @apply
+    underline
+}
+
+.understand-card-info .separate{
+    @apply
+    rounded-full w-2 h-2 bg-secondary block
+}
+
+.understand-card-info .understand-card-date{
+    font-size:12px;
+    @apply
+    text-hardGray
+}

@@ -1,0 +1,15 @@
+.tag-filter-container{
+    @apply
+    flex gap-2 flex-wrap mt-8
+}
+
+.tag-filter-container button{
+    @apply
+    text-hardGray uppercase font-semibold border border-normalGray
+    px-4 py-2 hover:bg-hardGray hover:text-white
+}
+
+.tag-filter-container button.active{
+    @apply
+    bg-hardGray text-white
+}

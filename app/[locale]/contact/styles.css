@@ -41,6 +41,7 @@
 #Contact .page-content h1{
     @apply
     text-lg lg:text-3xl text-white font-semibold lg:max-w-[260px] mb-4 lg:mb-8
+    font-archivo
 }
 
 #Contact .bread-cointainer a{
