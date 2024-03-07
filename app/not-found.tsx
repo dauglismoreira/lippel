@@ -1,5 +1,7 @@
 export default function NotFound() {
-  return <>
-    <h1>404</h1>
-  </>
+  return <html lang="pt-BR">
+    <body>
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </body>
+    </html>
 }
