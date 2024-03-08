@@ -1,0 +1,38 @@
+type PageComponent = {
+  id: number;
+  page_id: number;
+  name_pt_br: string;
+  name_en: string | null;
+  name_es: string | null;
+  description_pt_br: string | null;
+  description_en: string | null;
+  description_es: string | null;
+  long_text_pt_br: string | null;
+  long_text_en: string | null;
+  long_text_es: string | null;
+  link: string | null;
+  link_label_pt_br: string | null;
+  link_label_en: string | null;
+  link_label_es: string | null;
+  iframe: string | null;
+  gallery_image_id: number | null;
+  gallery_video_id: number | null;
+  enumeration_id: number | null;
+  vertical_image_id: number | null;
+  horizontal_image_id: number | null;
+  square_image_id: number | null;
+  vertical_video_id: number | null;
+  horizontal_video_id: number | null;
+  deleted_at: string | null;
+  enabled_fields: string;
+  created_at: string;
+  updated_at: string;
+  vertical_image: Image;
+  horizontal_image: Image;
+  square_image: Image;
+  gallery_image: Image;
+  gallery_video: Video;
+  vertical_video: Video;
+  horizontal_video: Video;
+  enumeration: EnumerationType;
+}
