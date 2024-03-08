@@ -20,7 +20,12 @@
     }
 }
 
-.overlay{
+.menu-overlay, .menu-toogle-overlay{
     @apply
-    fixed h-full w-full top-0 left-0 opacity-80 bg-black z-20
+    fixed h-full w-full top-0 left-0 z-20
+}
+
+.menu-overlay{
+    @apply
+    opacity-70 bg-black
 }

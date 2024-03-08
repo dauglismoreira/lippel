@@ -19,9 +19,10 @@ interface SelectProps {
     param?:string
     clear?:boolean
     options:any[];
+    className?:string;
 }
 
-export const SelectInput = ({param, clear, numberValue, label, options,defaultOption, sendInput, id, old}: SelectProps) => {
+export const SelectInput = ({param, clear, numberValue, label, options,defaultOption, sendInput, id, old, className}: SelectProps) => {
     const [inputValue, setInputValue] = useState<string>(old || '');
 
     function handleChange(value: string) {
@@ -41,7 +42,7 @@ export const SelectInput = ({param, clear, numberValue, label, options,defaultOp
       }, [clear])
 
     return(
-        <div className="select-container">
+        <div className={className ? className : 'select-container'}>
             <label>{label}</label>
             <div className="container-input">
                 <select value={inputValue} onChange={e => handleChange(e.target.value)}>

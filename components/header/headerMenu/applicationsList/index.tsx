@@ -36,7 +36,7 @@ export const ApplicationsList = ({activeOverlayMenu, selectedMenu, data}: Applic
                             key={index}
                             className="application-sub-item"
                         >
-                            <Link href="#">{item.label}</Link>
+                            <Link href="/applications/1">{item.label}</Link>
                         </div>
                     ))}
                 </div>

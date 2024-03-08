@@ -4,46 +4,102 @@ import Link from 'next/link'
 import { FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
-import { productMenuMock } from '../../mock'
+import { productMenuMock, servicesMenuMock } from '../../mock'
 
 interface ToogleMenuProps {
-    activeToogleMenu:boolean
+    activeToogleMenu:boolean;
+    onClose:() => void;
 }
 
-export const ToogleMenu = ({activeToogleMenu}: ToogleMenuProps) => {
+export const ToogleMenu = ({activeToogleMenu, onClose}: ToogleMenuProps) => {
     const t = useI18n()
     const locale: "pt-BR" | "en" | "es" = useCurrentLocale()
     const changeLocale = useChangeLocale()
     const [selectedMenu, setProductsMenu] = useState('')
+
+    const [accordionOpen, setAccordionOpen] = useState('')
+    const [subAccordionOpen, setSubAccordionOpen] = useState('')
 
     return(
         <>
         <div className={`toogle-menu ${activeToogleMenu ? 'active' : ''}`}>
 
             <div className='mobile-content'>
+                <div className={`menu-accordion ${accordionOpen === 'products' ? 'open' : 'close'}`}>
                 <li
                     className={`option`}
-                    onClick={() => setProductsMenu('products')}>
+                    onClick={() => {
+                        if(accordionOpen === 'products'){
+                            setAccordionOpen('')
+                        }else{
+                            setAccordionOpen('products')
+                        }
+                    }}
+                    >
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.73329 8.7335L12.3291 4.446L10.6083 1.58766C10.375 1.19877 10.0395 1.00433 9.60204 1.00433C9.16454 1.00433 8.82913 1.19877 8.59579 1.58766L5.73746 6.34183L9.73329 8.7335ZM21.0208 16.6668L18.425 12.3502L22.4791 10.0168L24.3458 13.1377C24.5597 13.4682 24.6763 13.8377 24.6958 14.246C24.7152 14.6543 24.6277 15.0335 24.4333 15.3835C24.2388 15.7724 23.952 16.0835 23.5729 16.3168C23.1937 16.5502 22.7805 16.6668 22.3333 16.6668H21.0208ZM17.6666 24.8335L13 20.1668L17.6666 15.5002V17.8335H23.2083L21.5166 21.2168C21.3027 21.6057 21.0111 21.9168 20.6416 22.1502C20.2722 22.3835 19.8638 22.5002 19.4166 22.5002H17.6666V24.8335ZM6.37913 22.5002C5.99024 22.5002 5.63538 22.3981 5.31454 22.1939C4.99371 21.9897 4.75552 21.7224 4.59996 21.3918C4.4444 21.0807 4.37149 20.755 4.38121 20.4147C4.39093 20.0745 4.48329 19.7585 4.65829 19.4668L5.64996 17.8335H10.6666V22.5002H6.37913ZM3.49163 19.1752L1.59579 15.3835C1.42079 15.0335 1.33815 14.6592 1.34788 14.2606C1.3576 13.862 1.4694 13.4877 1.68329 13.1377L2.14996 12.3502L0.166626 11.1543L6.55413 9.55016L8.15829 15.9668L6.14579 14.7418L3.49163 19.1752ZM19.2416 9.20016L12.8541 7.596L14.8666 6.40016L11.2208 0.333496H15.3333C15.7416 0.333496 16.1257 0.435579 16.4854 0.639746C16.8451 0.843913 17.1319 1.121 17.3458 1.471L18.8625 4.0085L20.8458 2.7835L19.2416 9.20016Z"/>
                     </svg>
-                    {t('Products')}<MdOutlineKeyboardArrowDown className={`${selectedMenu === 'products' ? 'arrow active' : 'arrow'}`} /></li>
-                    <div className={`products-sub-category ${selectedMenu === 'products' ? 'active' : ''}`}>
+                    {t('Products')}<MdOutlineKeyboardArrowDown className='arrow' /></li>
+                    <div className={`products-sub-category`}>
                         {productMenuMock.map((product, index) => (
-                            <div key={index} className="sub-category-item">
-                                <div dangerouslySetInnerHTML={{ __html: product.icon }}></div>
-                                <h2>{product.label}</h2>
-                                <MdOutlineKeyboardArrowDown className="arrow" />
-                            </div>
+                            <div key={index} className={`menu-sub-accordion ${subAccordionOpen === product.label ? 'open' : 'close'}`}>
+                                <div className="sub-category-item" onClick={() => {
+                                    if(subAccordionOpen === product.label){
+                                        setSubAccordionOpen('')
+                                    }else{
+                                        setSubAccordionOpen(product.label)
+                                    }
+                                }}>
+                                    <div dangerouslySetInnerHTML={{ __html: product.icon }}></div>
+                                    <h2>{product.label}</h2>
+                                    <MdOutlineKeyboardArrowDown className="sub-arrow" />
+                                </div>
+                                <div className={`products-sub-sub-category`}>
+                                    {product.items.map((item, index) => (
+                                        <li key={index} onClick={onClose}><Link href={'/products/1'}>{item.label}</Link></li>
+                                    ))}
+                                </div>
+                            </div>    
                         ))}
                     </div>
+                </div>
+                <div className={`menu-accordion ${accordionOpen === 'applications' ? 'open' : 'close'}`}>
                 <li
-                    className={`option ${selectedMenu === 'applications' ? 'active' : ''}`}
-                    onClick={() => setProductsMenu('applications')}>
+                    className={`option`}
+                    onClick={() => {
+                        if(accordionOpen === 'applications'){
+                            setAccordionOpen('')
+                        }else{
+                            setAccordionOpen('applications')
+                        }
+                    }}
+                    >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.38914 20.6102C2.33003 19.5509 1.5004 18.3268 0.900241 16.938C0.30008 15.5491 0 14.1132 0 12.6301C0 11.1471 0.282428 9.68176 0.847285 8.23404C1.41214 6.78633 2.33003 5.42689 3.60096 4.15573C4.42471 3.33182 5.44263 2.62562 6.65472 2.03712C7.86681 1.44862 9.30249 0.983703 10.9618 0.642372C12.621 0.301041 14.5156 0.0950656 16.6456 0.0244454C18.7756 -0.0461747 21.1586 0.0362155 23.7946 0.271616C23.9829 2.76686 24.0417 5.06202 23.9711 7.15708C23.9005 9.25215 23.7063 11.1412 23.3886 12.8244C23.0709 14.5075 22.6237 15.9787 22.0471 17.2381C21.4704 18.4975 20.7585 19.5509 19.9112 20.3984C18.6638 21.646 17.3399 22.5582 15.9396 23.1349C14.5392 23.7116 13.1094 24 11.6502 24C10.1204 24 8.62584 23.6999 7.16662 23.0996C5.70741 22.4993 4.44825 21.6695 3.38914 20.6102ZM7.34314 20.0453C8.02568 20.4454 8.72586 20.7338 9.4437 20.9104C10.1615 21.0869 10.897 21.1752 11.6502 21.1752C12.7328 21.1752 13.8037 20.9574 14.8628 20.522C15.9219 20.0865 16.9339 19.3861 17.8989 18.421C18.3225 17.9973 18.7521 17.4029 19.1875 16.6378C19.6229 15.8728 19.9995 14.8723 20.3172 13.6365C20.6349 12.4006 20.8762 10.9058 21.0409 9.15211C21.2057 7.39837 21.2292 5.30919 21.1115 2.88456C19.9583 2.83748 18.6579 2.81983 17.2105 2.8316C15.763 2.84337 14.3215 2.95518 12.8858 3.16704C11.4501 3.3789 10.0851 3.72024 8.79059 4.19104C7.49612 4.66184 6.43702 5.30919 5.61327 6.13309C4.55416 7.19239 3.82455 8.23993 3.42445 9.27569C3.02434 10.3115 2.82428 11.3119 2.82428 12.277C2.82428 13.6659 3.08906 14.8841 3.61861 15.9316C4.14817 16.9792 4.613 17.7148 5.01311 18.1385C6.00161 16.2553 7.30784 14.4486 8.9318 12.7184C10.5558 10.9882 12.4504 9.56994 14.6157 8.46356C12.9211 9.94658 11.4442 11.6238 10.1851 13.4952C8.92592 15.3667 7.9786 17.55 7.34314 20.0453Z"/>
                     </svg>
                     {t('Applications')}<MdOutlineKeyboardArrowDown className="arrow" /></li>
+                    <div className={`applications-sub-category`}>
+                        {servicesMenuMock.map((product, index) => (
+                            <div key={index} className={`menu-sub-accordion ${subAccordionOpen === product.label ? 'open' : 'close'}`}>
+                                <div className="sub-category-item" onClick={() => {
+                                    if(subAccordionOpen === product.label){
+                                        setSubAccordionOpen('')
+                                    }else{
+                                        setSubAccordionOpen(product.label)
+                                    }
+                                }}>
+                                    <h2>{product.label}</h2>
+                                    <MdOutlineKeyboardArrowDown className="sub-arrow" />
+                                </div>
+                                <div className={`applications-sub-sub-category`}>
+                                    {product.items.map((item, index) => (
+                                        <li key={index} onClick={onClose}><Link href={'/applications/1'}>{item.label}</Link></li>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>    
                 <li
                     className={`option ${selectedMenu === 'services' ? 'active' : ''}`}
                     onClick={() => setProductsMenu('services')}>
@@ -61,13 +117,13 @@ export const ToogleMenu = ({activeToogleMenu}: ToogleMenuProps) => {
             </div>
 
             <ul>
-                <li><a href="/about">A Lippel</a></li>
-                <li>Notícias</li>
-                <li><a href="/jobs">Vagas de emprego</a></li>
-                <li><a href="/curriculum">Deixe seu currículo</a></li>
-                <li><a href="/financing">Financiamento</a></li>
-                <li>Entenda mais</li>
-                <li><a href="/downloads">Downloads</a></li>
+                <li onClick={onClose}><Link href="/about">A Lippel</Link></li>
+                <li onClick={onClose}><Link href="/news">Notícias</Link></li>
+                <li onClick={onClose}><Link href="/jobs">Vagas de emprego</Link></li>
+                <li onClick={onClose}><Link href="/curriculum">Deixe seu currículo</Link></li>
+                <li onClick={onClose}><Link href="/financing">Financiamento</Link></li>
+                <li onClick={onClose}><Link href="/understand-more">Entenda mais</Link></li>
+                <li onClick={onClose}><Link href="/downloads">Downloads</Link></li>
             </ul>
 
             <div className='mobile-content'>

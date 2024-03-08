@@ -10,5 +10,25 @@
 
 .search-page .search-input-container input{
     @apply
-    w-full px-2 h-16 outline-none
+    w-full px-2 h-16 outline-none bg-transparent
+}
+
+.search-page .result-list{
+    @apply
+    flex flex-col
+}
+
+.search-page p{
+    @apply
+    font-lato font-semibold text-hardGray py-4
+}
+
+.search-page .pagination{
+    @apply
+    flex gap-4 items-center py-4 font-lato font-semibold text-primary
+}
+
+.search-page .pagination svg{
+    @apply
+    fill-secondary w-8 h-8 cursor-pointer transition hover:scale-125
 }

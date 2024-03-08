@@ -1,6 +1,9 @@
+'use client'
+
 import { MdOutlineKeyboardArrowRight } from "react-icons/md"
 import './styles.css'
 import { useI18n } from "@/locales/client";
+import Link from "next/link";
 
 interface ProductsListProps {
     activeOverlayMenu:boolean;
@@ -24,7 +27,7 @@ export const ProductsList = ({activeOverlayMenu, selectedMenu, data}: ProductsLi
                         </div>
                         <div className="products-menu-list">
                             {item.items.map((product:any, i:number) => (
-                                <li key={i}><MdOutlineKeyboardArrowRight /><p>{product.label}</p></li>
+                                <Link href={'/products/1'}  key={i}><li><MdOutlineKeyboardArrowRight /><p>{product.label}</p></li></Link>
                             ))}
                         </div>
                     </div>

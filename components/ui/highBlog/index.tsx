@@ -3,7 +3,7 @@ import { BlogCard } from '../blogCard';
 import { TitleSection } from '../sectionTitle/intex';
 
 interface HighBlogProps{
-    title:string;
+    title?:string;
 }
 
 export const HighBlog = ({title}: HighBlogProps) => {

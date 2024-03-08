@@ -28,6 +28,7 @@ export const DateFilter = ({onfilter}:DateFilterProps) => {
     return(
         <div className="date-filter-container">
             <SelectInput
+                className="date"
                 id={'month'}
                 sendInput={handleMonth}
                 defaultOption={{label:'Mês', value:''}}
@@ -49,6 +50,7 @@ export const DateFilter = ({onfilter}:DateFilterProps) => {
                 }
             />
             <SelectInput
+                className="date"
                 id={'year'}
                 sendInput={handleYear}
                 defaultOption={{label:'Ano', value:''}}

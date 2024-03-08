@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './styles.css';
 
 interface ProductCardProps {
@@ -20,7 +21,7 @@ export const ProductCard = ({data}: ProductCardProps) => {
                     </li>
                 ))}
                 </div>
-                <button>Ir para o produto</button>
+                <Link href={'/products/1'}><button>Ir para o produto</button></Link>
             </div>
         </div>
     )

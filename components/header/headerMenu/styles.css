@@ -7,7 +7,7 @@
 .header .header-menu .menu{
     @apply
     list-none text-primary uppercase font-semibold gap-8
-    hidden lg:flex
+    hidden lg:flex lg:h-full
 }
 
 .header .header-menu .menu li{
@@ -53,7 +53,7 @@
 
 .header .header-menu .header-col{
     @apply
-    flex gap-20
+    flex gap-20 lg:h-full items-center
 }
 
 .header .header-menu .actions .toogle.active span:nth-child(1){

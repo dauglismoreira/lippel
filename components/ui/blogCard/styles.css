@@ -28,13 +28,13 @@
 
 .blog-card-container  .blog-card-info h2{
     @apply
-    text-2xl text-primary font-bold h-20 font-archivo
+    text-2xl text-primary font-bold h-20 font-archivo mb-4
 }
 
 
 .blog-card-container  .blog-card-info p{
     @apply
-    text-hardGray text-lg h-28 font-lato
+    text-hardGray text-lg h-28 font-lato max-h-[90px] overflow-hidden
 }
 
 .blog-card-container button{

@@ -26,10 +26,15 @@
 
 .job-list .list.body-list .list-item h3{
     @apply
-    text-lg text-primary font-semibold  flex items-center gap-2 font-arhivo
+    text-lg text-primary font-semibold  flex items-center gap-2 font-archivo
 }
 
 .job-list .list.body-list .list-item p{
     @apply
     text-sm text-hardGray font-lato
+}
+
+.job-list .list.body-list .list-item  button{
+    @apply
+    whitespace-nowrap
 }

@@ -55,7 +55,7 @@ export const Header = () => {
     return(
         <>
         <div className="header">
-            <div className="header-locale">
+            <div className="header-locale" onMouseOver={() => handleProductsMenu('')}>
                 <div className="header-container">
                     <HeaderContact/>
                 </div>
@@ -79,10 +79,13 @@ export const Header = () => {
 
         <FullSearch activeSearchMenu={activeSearchMenu}/>
 
-        <ToogleMenu activeToogleMenu={activeMenu}/>
+        <ToogleMenu activeToogleMenu={activeMenu} onClose={() => setActiveMenu(false)}/>
 
         {activeOverlayMenu &&
-            <div className="overlay" onClick={() => handleProductsMenu('')}></div>
+            <div className="menu-overlay" onMouseOver={() => handleProductsMenu('')}></div>
+        }
+        {activeMenu &&
+            <div className="menu-toogle-overlay" onClick={() => setActiveMenu(false)}></div>
         }
         </>
     )

@@ -1,7 +1,6 @@
+import {redirect} from "next/navigation";
+import '@/app/globals.css'
+
 export default function NotFound() {
-  return <html lang="pt-BR">
-    <body>
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    </body>
-    </html>
+  redirect('/404')
 }

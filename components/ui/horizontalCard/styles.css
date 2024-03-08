@@ -1,0 +1,34 @@
+.horizontal-result-card{
+    @apply
+    flex gap-8 flex-col lg:flex-row border-b border-normalGray py-6
+}
+
+.horizontal-result-card .cover{
+    @apply
+    min-w-[222px] min-h-[222px] bg-center bg-cover
+}
+
+.horizontal-result-card .info-container{
+    @apply
+    w-full flex flex-col lg:h-[222px] justify-center gap-2
+}
+
+.horizontal-result-card .info-container h3{
+    @apply
+    font-lato uppercase text-primary text-xs font-semibold
+}
+
+.horizontal-result-card .info-container h2{
+    @apply
+    font-archivo text-2xl font-semibold text-primary
+}
+
+.horizontal-result-card .info-container p{
+    @apply
+    font-lato text-hardGray text-lg
+}
+
+.horizontal-result-card .info-container a{
+    @apply
+    text-primary  font-semibold font-lato underline hover:text-secondary mt-2
+}

@@ -3,12 +3,14 @@
     flex gap-2 flex-wrap mt-8
 }
 
-.date-filter-container .container-input{
+.date-filter-container .date{
     @apply
     px-2 border border-normalGray h-12
 }
 
-.date-filter-container .container-input select{
+.date-filter-container .date select{
+    height:100%!important;
+
     @apply
     w-full h-full outline-none
 }

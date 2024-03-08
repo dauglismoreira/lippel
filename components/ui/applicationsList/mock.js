@@ -4,31 +4,31 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sivicultura: produção de floresta energética',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 1',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 5',
-                link:'#'
+                link:'/applications/1'
             },
             {
                 label:'Sub-Aplicação 6',
-                link:'#'
+                link:'/applications/1'
             },
         ],
     },
@@ -37,15 +37,15 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -54,23 +54,23 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 5',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -79,27 +79,27 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 5',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 6',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -108,19 +108,19 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -129,31 +129,31 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 5',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 6',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 7',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -162,19 +162,19 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 3',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 4',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },
@@ -183,11 +183,11 @@ export const applicationsMock = [
         items:[
             {
                 label:'Sub-Aplicação 1',
-                link:'#',
+                link:'/applications/1',
             },
             {
                 label:'Sub-Aplicação 2',
-                link:'#',
+                link:'/applications/1',
             },
         ]
     },

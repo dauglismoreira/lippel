@@ -54,17 +54,17 @@ export const Footer = () => {
                     <div className="footer-col">
                         <div className="footer-menu">
                             <li><Link href="#">Produtos</Link></li>
-                            <li><Link href="#">Aplicações</Link></li>
-                            <li><Link href="#">Serviços</Link></li>
-                            <li><Link href="#">A Lippel</Link></li>
+                            <li><Link href="/applications">Aplicações</Link></li>
+                            <li><Link href="/services">Serviços</Link></li>
+                            <li><Link href="/about">A Lippel</Link></li>
                         </div>
                     </div>
                     <div className="footer-col">
                         <div className="footer-menu">
-                            <li><Link href="#">A Lippel</Link></li>
-                            <li><Link href="#">Vagas de Emprego</Link></li>
-                            <li><Link href="#">Notícias</Link></li>
-                            <li><Link href="#">Entenda Mais</Link></li>
+                            <li><Link href="/about">A Lippel</Link></li>
+                            <li><Link href="/jobs">Vagas de Emprego</Link></li>
+                            <li><Link href="/news">Notícias</Link></li>
+                            <li><Link href="/understand-more">Entenda Mais</Link></li>
                         </div>
                     </div>
                 </div>

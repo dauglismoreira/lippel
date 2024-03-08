@@ -1,0 +1,30 @@
+.not-found-container{
+    @apply
+    min-h-[70vh] bg-primary flex items-center justify-center flex-col px-4
+    lg:flex-row gap-8
+}
+
+.not-found-container .not-found-content{
+    @apply
+    flex flex-col gap-4
+}
+
+.not-found-container .not-found-content .buttons{
+    @apply
+    flex gap-2 items-center flex-col lg:flex-row
+}
+
+.not-found-container .not-found-content h1{
+    @apply
+    font-archivo text-2xl lg:text-6xl font-black text-white text-center lg:text-left
+}
+
+.not-found-container .not-found-content p{
+    @apply
+    text-white font-lato text-lg text-center lg:text-left
+}
+
+.not-found-container .not-found-content .buttons button{
+    @apply
+    w-full lg:w-auto
+}

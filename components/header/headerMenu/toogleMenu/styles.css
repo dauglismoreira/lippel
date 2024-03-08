@@ -3,7 +3,7 @@
     left:75%;
     @apply
     fixed bg-white lg:bg-ultraSoftBlue z-40 transition top-0 border-t border-primary
-    w-full lg:w-56 lg:h-auto
+    w-full lg:w-56 lg:h-auto overflow-auto
 }
 
 .toogle-menu ul{
@@ -33,7 +33,7 @@
 
 .toogle-menu li{
     @apply
-    text-primary uppercase list-none font-bold py-2 hover:text-secondary cursor-pointer
+    text-primary uppercase list-none font-bold py-2 cursor-pointer
 }
 
 .mobile-content{
@@ -62,10 +62,33 @@
         @apply
         w-0.5 h-4 bg-primary block
     }
-
+    .toogle-menu .menu-accordion{
+        @apply
+        h-20 overflow-hidden
+    }
+    .toogle-menu .menu-accordion.open{
+        @apply
+        h-auto
+    }
+    .toogle-menu .menu-accordion.open .option{
+        @apply
+        text-secondary
+    }
+    .toogle-menu .menu-sub-accordion{
+        @apply
+        h-20 overflow-hidden
+    }
+    .toogle-menu .menu-sub-accordion.open{
+        @apply
+        h-auto
+    }
+    .toogle-menu .menu-sub-accordion.open .option{
+        @apply
+        text-secondary
+    }
     .toogle-menu li.option{
         @apply
-        flex gap-4 items-center cursor-pointer hover:text-secondary w-full px-4 h-20
+        flex gap-4 items-center cursor-pointer w-full px-4 h-20
         border-b border-regularSoftBlue text-lg relative
     }
 
@@ -79,7 +102,12 @@
         transition rotate-0
     }
 
-    .toogle-menu li.option svg.arrow.active{
+    .toogle-menu .menu-accordion.open svg.arrow{
+        @apply
+        rotate-180
+    }
+
+    .toogle-menu .menu-sub-accordion.open svg.sub-arrow{
         @apply
         rotate-180
     }
@@ -103,7 +131,7 @@
     flex gap-4 p-8 h-20 bg-softGray border-b border-regularSoftBlue items-center relative
 }
 
-.products-sub-category .sub-category-item svg.arrow{
+.products-sub-category .sub-category-item svg.sub-arrow{
     @apply
     w-8 h-8 absolute right-8 fill-primary transition
 }
@@ -113,18 +141,40 @@
     text-lg font-bold
 }
 
-.products-sub-category .sub-category-item:nth-child(1) h2{
+.products-sub-category .menu-sub-accordion:nth-child(1) .sub-category-item h2{
     color:#D3AC00;
 }
-.products-sub-category .sub-category-item:nth-child(2) h2{
+.products-sub-category .menu-sub-accordion:nth-child(2) .sub-category-item h2{
     color:#50A48A;
 }
-.products-sub-category .sub-category-item:nth-child(3) h2{
+.products-sub-category .menu-sub-accordion:nth-child(3) .sub-category-item h2{
     color:#4575F6;
 }
-.products-sub-category .sub-category-item:nth-child(4) h2{
+.products-sub-category .menu-sub-accordion:nth-child(4) .sub-category-item h2{
     color:#947658;
 }
-.products-sub-category .sub-category-item:nth-child(5) h2{
+.products-sub-category .menu-sub-accordion:nth-child(5) .sub-category-item h2{
     color:#263238;
+}
+
+
+.applications-sub-category .sub-category-item{
+    @apply
+    flex gap-4 p-8 h-20 bg-softGray border-b border-regularSoftBlue items-center relative justify-between w-full
+}
+
+.applications-sub-category .sub-category-item svg.sub-arrow{
+    @apply
+    w-8 h-8 absolute right-8 fill-primary transition
+}
+
+.applications-sub-category .sub-category-item h2{
+    @apply
+    text-lg font-bold text-primary
+}
+
+.applications-sub-category .applications-sub-sub-category li,
+.products-sub-category .products-sub-sub-category li{
+    @apply
+    border-b border-normalGray px-12 py-4
 }
