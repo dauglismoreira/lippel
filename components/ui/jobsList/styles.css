@@ -13,11 +13,30 @@
     h-12
 }
 
-.job-list .list.body-list{
+.job-list .list.body-list .list-title{
     @apply
-    h-28 items-center
+    flex items-center h-28 flex-wrap gap-6
 }
 
+.job-list .list.body-list .list-body{
+    @apply
+    h-0 overflow-hidden
+}
+
+.job-list .list.body-list .list-body.active{
+    @apply
+    h-auto pb-8
+}
+
+.job-list .list.body-list .list-item svg{
+    @apply
+    transition rotate-0
+}
+
+.job-list .list.body-list .list-item.active svg{
+    @apply
+    rotate-180
+}
 
 .job-list .list.header-list .list-item label{
     @apply
@@ -29,7 +48,8 @@
     text-lg text-primary font-semibold  flex items-center gap-2 font-archivo
 }
 
-.job-list .list.body-list .list-item p{
+.job-list .list.body-list .list-item p,
+.job-list .list.body-list .list-body{
     @apply
     text-sm text-hardGray font-lato
 }

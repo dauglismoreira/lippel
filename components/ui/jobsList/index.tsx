@@ -19,7 +19,8 @@ export const JobsList = () => {
             contrato:'CLT',
             button:{
                 label:'Aplicar a vaga',
-            }
+            },
+            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         },
         {
             id:2,
@@ -31,7 +32,8 @@ export const JobsList = () => {
             contrato:'CLT',
             button:{
                 label:'Aplicar a vaga',
-            }
+            },
+            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         },
         {
             id:3,
@@ -43,7 +45,8 @@ export const JobsList = () => {
             contrato:'CLT',
             button:{
                 label:'Aplicar a vaga',
-            }
+            },
+            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         },
         {
             id:4,
@@ -55,12 +58,14 @@ export const JobsList = () => {
             contrato:'CLT',
             button:{
                 label:'Aplicar a vaga',
-            }
+            },
+            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         },
     ]
 
     const [modalOpen, setModalOpen] = useState(false)
     const [selectedJob, setSelectedJob] = useState([])
+    const [selectedAccordion, setSelectedAccordion] = useState('')
 
     const handleModalJob = (item:any) => {
         setModalOpen(true)
@@ -95,26 +100,35 @@ export const JobsList = () => {
 
                 {mockList.map((item, index) => (
                     <div key={index} className="list body-list">
-                        <div className="list-item" style={{flex:3}}>
-                            <h3><IoIosArrowDown />{item.cargo}</h3>
-                        </div>
-                        <div className="list-item" style={{flex:1}}>
-                            <p>{item.local}</p>
-                        </div>
-                        <div className="list-item" style={{flex:2}}>
-                            <p>{item.horario}</p>
-                        </div>
-                        <div className="list-item" style={{flex:2}}>
-                            <p>{item.requerida}</p>
-                        </div>
-                        <div className="list-item" style={{flex:2}}>
-                            <p>{item.desejada}</p>
-                        </div>
-                        <div className="list-item" style={{flex:1}}>
-                            <p className="font-semibold text-center">{item.contrato}</p>
-                        </div>
-                        <div className="list-item" style={{flex:2}}>
-                            <PrimaryButton action={() => handleModalJob(item)}>{item.button.label}</PrimaryButton>
+                        <div className="list-title">
+                            <div
+                                className={`list-item cursor-pointer ${selectedAccordion === item.cargo ? 'active' : ''}`}
+                                style={{flex:3}}
+                                onClick={() => setSelectedAccordion(prevState => prevState === item.cargo ? '' : item.cargo)}
+                            >
+                                <h3><IoIosArrowDown />{item.cargo}</h3>
+                            </div>
+                            <div className="list-item" style={{flex:1}}>
+                                <p>{item.local}</p>
+                            </div>
+                            <div className="list-item" style={{flex:2}}>
+                                <p>{item.horario}</p>
+                            </div>
+                            <div className="list-item" style={{flex:2}}>
+                                <p>{item.requerida}</p>
+                            </div>
+                            <div className="list-item" style={{flex:2}}>
+                                <p>{item.desejada}</p>
+                            </div>
+                            <div className="list-item" style={{flex:1}}>
+                                <p className="font-semibold text-center">{item.contrato}</p>
+                            </div>
+                            <div className="list-item" style={{flex:2}}>
+                                <PrimaryButton action={() => handleModalJob(item)}>{item.button.label}</PrimaryButton>
+                            </div>
+                        </div> 
+                        <div className={`list-body ${selectedAccordion === item.cargo ? 'active' : ''}`}>
+                            {item.description}
                         </div>
                     </div>
                 ))}

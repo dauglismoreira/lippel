@@ -68,9 +68,11 @@ export const GallerySlider = ({data}:any) => {
                 </Slide>
             ))}
         </GenericSlider>
+        <div className="arrow-overlay prev"></div>
         <div className="arrow-prev">
             <button onClick={handlePrevClick}><GoArrowLeft /></button>
         </div>
+        <div className="arrow-overlay next"></div>
         <div className="arrow-next">
             <button onClick={handleNextClick}><GoArrowRight /></button>
         </div>
@@ -85,7 +87,7 @@ export const GallerySlider = ({data}:any) => {
                     slides={data}
                     transition={500}
                     perView={isLargeScreen ? 4 : 3}
-                    // gap={20}
+                    gap={10}
                     duration={3000}
                     auto={slideAuto}
                     onSlideChange={handleSlideChange}

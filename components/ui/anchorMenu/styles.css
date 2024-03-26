@@ -3,6 +3,11 @@
     bg-primary w-full overflow-auto
 }
 
+.anchorcmenu.fixe{
+    @apply
+    fixed w-full top-[56px] lg:top-[152px] left-0 z-50 shadow-xl
+}
+
 .anchorcmenu-container{
     @apply
     max-w-[1400px] mx-auto flex h-12 lg:px-4

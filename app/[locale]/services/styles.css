@@ -12,3 +12,13 @@
     @apply
     text-lg text-hardGray  max-w-[930px] font-lato
 }
+
+#Services .container-buttons button{
+    @apply
+    bg-secondary text-primary font-semibold hover:underline px-4
+}
+
+#Services .container-buttons button:nth-child(2){
+    @apply
+    bg-transparent text-hardGray border border-hardGray font-normal hover:underline
+}

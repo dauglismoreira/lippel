@@ -30,6 +30,11 @@
     list-none text-white text-sm cursor-pointer hover:text-secondary
 }
 
+.header-container .locale .current-locale{
+    @apply
+    text-secondary font-semibold
+}
+
 .header-container .locale .separate{
     @apply
     h-4 w-px bg-white block

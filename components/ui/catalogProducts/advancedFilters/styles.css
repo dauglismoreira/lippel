@@ -54,7 +54,12 @@
 
 .range-values-container{
     @apply
-    flex w-full justify-between text-hardGray text-sm font-lato font-bold -mt-2
+    flex w-full justify-between text-white text-sm font-lato font-bold -mt-2
+}
+
+.product-advanced-search .range-values-container{
+    @apply
+    text-hardGray
 }
 
 .product-advanced-search label{

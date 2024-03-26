@@ -18,6 +18,22 @@
     absolute top-[400px] right-12 hidden lg:block
 }
 
+.gallery-slider .arrow-overlay{
+    height:calc(100% - 168px);
+    @apply
+    bg-black opacity-50 w-[120px] absolute blur-md top-[20px] hidden lg:block
+}
+
+.gallery-slider .arrow-overlay.next{
+    @apply
+    right-0
+}
+
+.gallery-slider .arrow-overlay.prev{
+    @apply
+    left-0
+}
+
 .gallery-slider svg{
     @apply
     w-8 h-8 hover:scale-110 transition fill-white
@@ -43,13 +59,13 @@
 
 .gallery-slider .atual-slide-info{
     @apply
-    max-w-[1400px] w-full mx-auto bg-white flex gap-4 items-center h-16 lg:h-8
-    lg:absolute lg:-mt-8 z-30 left-2/4 lg:-translate-x-2/4
+    max-w-[1400px] w-full mx-auto bg-white flex gap-4 items-center h-16 lg:h-[46px]
+    lg:absolute lg:-mt-[46px] z-30 left-2/4 lg:-translate-x-2/4
 }
 
 .gallery-slider .atual-slide-info span{
     @apply
-    h-16 lg:h-8 min-w-12 flex items-center justify-center bg-primary text-white
+    h-16 lg:h-[46px] min-w-12 flex items-center justify-center bg-primary text-white
     font-semibold text-2xl font-archivo px-4
 }
 

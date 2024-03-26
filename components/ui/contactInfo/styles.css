@@ -1,0 +1,39 @@
+.contact-info-container{
+  @apply
+  bg-strongBlue
+}
+
+.contact-info-container .contact-info-content{
+  @apply
+  max-w-[1400px] mx-auto py-16 gap-12 lg:gap-4 flex lg:flex-wrap px-4 flex-col lg:flex-row
+}
+
+.contact-info-container .contact-info-content .col{
+  @apply
+  flex-1
+}
+
+.contact-info-container .contact-info-content .col h3{
+  @apply
+  font-archivo text-2xl text-white uppercase font-semibold mb-4
+}
+
+.contact-info-container .contact-info-content .col label{
+  @apply
+  text-white text-xs
+}
+
+.contact-info-container .contact-info-content .col p{
+  @apply
+  text-white text-lg max-w-[200px] whitespace-pre-line
+}
+
+.contact-map{
+  @apply
+  w-full h-[700px] bg-gray-200
+}
+
+.contact-map iframe{
+  @apply
+  w-full h-full
+}

@@ -21,6 +21,7 @@ const config: Config = {
         strongBlue:'#06426A',
         darkBlue: '#053453',
         regularBlue: '#053453',
+        newBlue:'#085080',
         secondary: '#F8CA00',
         hardGray: '#435861',
         regularGray: '#8097A2',

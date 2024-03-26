@@ -10,7 +10,7 @@ export const BackgroundSection = () => {
         }}>
             <div className="banner-content">
                 <h1>Seja o motor da mudança.</h1>
-                <PrimaryButton link={'#'}>Conheça nossos produtos agora</PrimaryButton>
+                <PrimaryButton className="bg-secondary hover:underline text-darkBlue" link={'#'}>Conheça nossos produtos agora</PrimaryButton>
             </div>
         </div>
     );

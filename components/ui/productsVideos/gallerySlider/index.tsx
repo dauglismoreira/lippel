@@ -4,9 +4,8 @@ import { GenericSlider, GenericSliderRef } from '../../../genericSlider';
 import './styles.css'
 import { useRef, useState } from 'react';
 import { Slide } from '../../../genericSlider/slide';
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { IndexItemSlider } from './indexItemSlider';
 import useScreenSize from '@/components/hooks/useScreenSize';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 
 export const GallerySlider = ({data}:any) => {
@@ -69,10 +68,10 @@ export const GallerySlider = ({data}:any) => {
             ))}
         </GenericSlider>
         <div className="arrow-prev">
-            <button onClick={handlePrevClick}><GoArrowLeft /></button>
+            <button onClick={handlePrevClick}><IoIosArrowBack /></button>
         </div>
         <div className="arrow-next">
-            <button onClick={handleNextClick}><GoArrowRight /></button>
+            <button onClick={handleNextClick}><IoIosArrowForward /></button>
         </div>
         <div className="atual-slide-info">
             <span>{activeSlidePosition}/{data.length}</span>
@@ -85,7 +84,7 @@ export const GallerySlider = ({data}:any) => {
                     slides={data}
                     transition={500}
                     perView={isLargeScreen ? 4 : 2}
-                    // gap={20}
+                    gap={10}
                     // duration={3000}
                     auto={false}
                     onSlideChange={handleSlideChange}

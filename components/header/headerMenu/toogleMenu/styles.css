@@ -2,7 +2,7 @@
     transform:translate(0,-200%);
     left:75%;
     @apply
-    fixed bg-white lg:bg-ultraSoftBlue z-40 transition top-0 border-t border-primary
+    fixed bg-white lg:bg-softGray z-40 transition top-0 border-t border-primary
     w-full lg:w-56 lg:h-auto overflow-auto
 }
 
@@ -33,7 +33,7 @@
 
 .toogle-menu li{
     @apply
-    text-primary uppercase list-none font-bold py-2 cursor-pointer
+    text-primary uppercase list-none font-semibold py-2 cursor-pointer hover:underline
 }
 
 .mobile-content{

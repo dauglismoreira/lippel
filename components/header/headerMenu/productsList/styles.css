@@ -2,7 +2,7 @@
     transform:translate(0,-100%);
     height:722px;
     @apply
-    fixed w-full inset-0 bg-white z-30 transition p-12
+    fixed w-full inset-0 bg-softGray z-30 transition p-12
 }
 
 .overlay-menu-container.active{

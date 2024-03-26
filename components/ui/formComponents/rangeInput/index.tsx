@@ -42,8 +42,8 @@ export const RangeInput = ({id, max, min, label, old, sendInput, disabled}: Rang
             barRightColor='#F8CA00'
             subSteps='false'
             step={5}
-            minValue={inputValues.min}
-            maxValue={inputValues.max}
+            minValue={inputValues.min ? inputValues.min : min}
+            maxValue={inputValues.max ? inputValues.max : max}
             onInput={(e: ChangeResult) => {
                 handleChange(e)
             }}
@@ -51,7 +51,7 @@ export const RangeInput = ({id, max, min, label, old, sendInput, disabled}: Rang
         </div>
 
         <div className="range-values-container">
-            <span>{inputValues.min}</span><span>{inputValues.max}</span>
+            <span>{inputValues.min ? inputValues.min : min}</span><span>{inputValues.max ? inputValues.max : max}</span>
         </div>
 
     </fieldset>
